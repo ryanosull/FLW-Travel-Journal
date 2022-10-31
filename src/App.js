@@ -2,7 +2,11 @@ import './App.css';
 
 function App() {
 
-  function buttonClick () {
+  // function buttonClick () {
+  //   alert("talkin' to you, dorks")
+  // }
+
+  const buttonClick = () => {
     alert("talkin' to you, dorks")
   }
 
