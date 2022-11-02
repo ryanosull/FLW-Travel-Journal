@@ -13,7 +13,7 @@ function HomeCard ({home}) {
 
     return (
         <div className = "ui eight wide column" onClick={toggleHomeDetails} >
-            <div>
+            <div className = 'houseTile'>
                 {
                     showDetails ? 
                     <HomeCardRear home={home} />
