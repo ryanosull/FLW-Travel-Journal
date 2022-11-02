@@ -1,4 +1,8 @@
+import React from "react";
 import './App.css';
+import HomesContainer from "./HomesContainer";
+
+// import './db.json';
 
 function App() {
 
@@ -15,6 +19,10 @@ function App() {
     <div className="App">
       <h3>hello dorks</h3>
       <button onClick={buttonClick}>click me bby</button>
+      <br />
+      <hr />
+      <br />
+      <HomesContainer />
     </div>
   );
 }

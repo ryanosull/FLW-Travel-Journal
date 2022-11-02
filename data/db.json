@@ -1,0 +1,39 @@
+{
+    "flwHomes": [
+        {
+            "id": 1,
+            "name": "Frederick C. Robie House",
+            "description": "The Frederick C. Robie House is a U.S. National Historic Landmark now on the campus of the University of Chicago in the South Side neighborhood of Hyde Park in Chicago, Illinois. ",
+            "city": "Chicago",
+            "state": "Illinois",
+            "decadeCompleted": "1910s",
+            "yearCompleted": "1910",
+            "image": "https://live.staticflickr.com/65535/49539496622_c997329f78_b.jpg",
+            "likes": 5
+        },
+        {
+            "id": 2,
+            "name": "Frank Lloyd Wright Home and Studio",
+            "description": "The Frank Lloyd Wright Home and Studio is a historic house and design studio in Oak Park, Illinois, which was designed and owned by architect Frank Lloyd Wright. First built in 1889 and added to over the years, the home and studio is furnished with original Wright-designed furniture and textiles.",
+            "city": "Oak Park",
+            "state": "Illinois",
+            "decadeCompleted": "1880s",
+            "yearCompleted": "1889",
+            "image": "https://media.cntraveler.com/photos/5a8ee90e873a2240b39fffea/16:9/w_2560,c_limit/Frank-Lloyd-Wright-House-and-Studio-Tour_2018_StudioFacade_JamesCaulfield_July2017.jpg",
+            "likes": 1
+        },
+        {
+            "id": 3,
+            "name": "Taliesin West",
+            "description": "Taliesin West was architect Frank Lloyd Wright's winter home and studio in the desert from 1937 until his death in 1959 at the age of 91. Today it is the headquarters of the Frank Lloyd Wright Foundation.",
+            "city": "Scottsdale",
+            "state": "Arizona",
+            "decadeCompleted": "1930s",
+            "yearCompleted": "1937",
+            "image": "https://www.phoenixmag.com/wp-content/uploads/2020/02/Taliesin-West_Front-evening-1_Photo-credit-Andrew-Pielage_copyright-Frank-Lloyd-Wright-Foundation.jpg",
+            "likes": 0
+        }
+    ]
+}
+
+
