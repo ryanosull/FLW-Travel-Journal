@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import HomesCard from "./HomesCard"
+import HomesCard from "./HomeCard"
 
 const homesUrl = "http://localhost:8000/flwHomes"
 
@@ -13,9 +13,9 @@ function HomesContainer () {
         .then(homeData => setHomes(homeData))
     }, [])
 
-    const renderHomes = homes.map((home) => {
+    const renderHomes = homes.map((home, index) => {
         return(
-            <HomesCard home={home}/>
+            <HomesCard home={home} key={index}/>
         )
     })
 
