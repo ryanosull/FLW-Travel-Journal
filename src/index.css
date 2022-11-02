@@ -11,3 +11,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.minHouseTile {
+  width: 1000px;
+  height: 500px;
+  background-size: cover;
+}
