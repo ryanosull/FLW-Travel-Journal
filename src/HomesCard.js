@@ -5,6 +5,8 @@ import HogCardRear from "./HomeCardRear";
 function HomesCard ({homes}) {
 
 
+    
+
     const renderHomes = homes.map((home) => {
         return(
             <HomeCardFront
