@@ -13,12 +13,16 @@ function HomesContainer () {
         .then(homeData => setHomes(homeData))
     }, [])
 
-    
+    const renderHomes = homes.map((home) => {
+        return(
+            <HomesCard home={home}/>
+        )
+    })
 
 
     return (
         <div>
-            <HomesCard homes={homes}/> this is HomesContainer
+            {renderHomes} this is HomesContainer
         </div>
     )
 };

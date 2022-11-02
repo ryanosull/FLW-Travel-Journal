@@ -1,15 +1,24 @@
 import React from "react";
 
 
-function HogCardRear () {
+function HomeCardRear ({home}) {
+
+    const renderHomeDetails = []
+
+    for (let key in home) {
+        if (key !=="id" && key !== "decadeCompleted" && key !=="image" && key !=="likes")
+            renderHomeDetails.push(<ul>{`${key}: ${home[key]}`}</ul>)
+    }
 
 
     return (
         <div>
-            hog card rear
+            <h3>
+                {renderHomeDetails}
+            </h3>
         </div>
     )
 };
 
 
-export default HogCardRear; 
+export default HomeCardRear; 

@@ -1,24 +1,27 @@
 import React, {useState} from "react";
 import HomeCardFront from "./HomeCardFront";
-import HogCardRear from "./HomeCardRear";
+import HomeCardRear from "./HomeCardRear";
 
-function HomesCard ({homes}) {
+function HomesCard ({home}) {
+
+    const [showDetails, setShowDetails] = useState(false)
+
+    function toggleHomeDetails () {
+        setShowDetails(!showDetails)
+    }
 
 
-    
 
-    const renderHomes = homes.map((home) => {
-        return(
-            <HomeCardFront
-            name={home.name}
-            image={home.image}
-            />
-        )
-    })
 
     return (
-        <div>
-            HomesCard{renderHomes}
+        <div className = "ui eight wide column" onClick={toggleHomeDetails} >
+            <div>
+                {
+                showDetails ? 
+                <HomeCardRear home={home} />
+                :
+                <HomeCardFront home={home} />}
+            </div>
         </div>
     )
 

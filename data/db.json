@@ -3,7 +3,7 @@
         {
             "id": 1,
             "name": "Frederick C. Robie House",
-            "description": "The Frederick C. Robie House is a U.S. National Historic Landmark now on the campus of the University of Chicago in the South Side neighborhood of Hyde Park in Chicago, Illinois. ",
+            "Description": "The Frederick C. Robie House is a U.S. National Historic Landmark now on the campus of the University of Chicago in the South Side neighborhood of Hyde Park in Chicago, Illinois. ",
             "city": "Chicago",
             "state": "Illinois",
             "decadeCompleted": "1910s",
@@ -14,7 +14,7 @@
         {
             "id": 2,
             "name": "Frank Lloyd Wright Home and Studio",
-            "description": "The Frank Lloyd Wright Home and Studio is a historic house and design studio in Oak Park, Illinois, which was designed and owned by architect Frank Lloyd Wright. First built in 1889 and added to over the years, the home and studio is furnished with original Wright-designed furniture and textiles.",
+            "Description": "The Frank Lloyd Wright Home and Studio is a historic house and design studio in Oak Park, Illinois, which was designed and owned by architect Frank Lloyd Wright. First built in 1889 and added to over the years, the home and studio is furnished with original Wright-designed furniture and textiles.",
             "city": "Oak Park",
             "state": "Illinois",
             "decadeCompleted": "1880s",
@@ -25,7 +25,7 @@
         {
             "id": 3,
             "name": "Taliesin West",
-            "description": "Taliesin West was architect Frank Lloyd Wright's winter home and studio in the desert from 1937 until his death in 1959 at the age of 91. Today it is the headquarters of the Frank Lloyd Wright Foundation.",
+            "Description": "Taliesin West was architect Frank Lloyd Wright's winter home and studio in the desert from 1937 until his death in 1959 at the age of 91. Today it is the headquarters of the Frank Lloyd Wright Foundation.",
             "city": "Scottsdale",
             "state": "Arizona",
             "decadeCompleted": "1930s",
