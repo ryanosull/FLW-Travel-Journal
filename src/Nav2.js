@@ -1,14 +1,18 @@
 import React from "react";
 import logo from "./assets/logo.jpg";
-import {Segment} from 'semantic-ui-react';
+import {Segment, Header} from 'semantic-ui-react';
 
 const Nav = () => {
 	return (
-		<Segment>
-            <h1>A Travel Guide to Frank Lloyd Wright Homes</h1>
-            <img src={logo} alt="" /> 
-		</Segment>
+        <div>
+            <Segment inverted vertical >
+                <Header as="h2" >A Travel Guide to Frank Lloyd Wright Homes</Header>
+                <img src={logo} alt="" /> 
+            </Segment>
+        </div>
 	);
 };
 
 export default Nav;
+
+// color=#e3b270

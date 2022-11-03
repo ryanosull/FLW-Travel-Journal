@@ -22,8 +22,6 @@ function App() {
       {/* <h3>hello dorks</h3>
       <button onClick={buttonClick}>click me bby</button> */}
       <br />
-      <hr />
-      <br />
       <HomesContainer />
       <br />
     </div>
