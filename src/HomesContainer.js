@@ -22,7 +22,7 @@ function HomesContainer () {
 
     return (
         <div>
-            {renderHomes} this is HomesContainer
+            {renderHomes}
         </div>
     )
 };

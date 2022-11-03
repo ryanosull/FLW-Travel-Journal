@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css';
 import HomesContainer from "./HomesContainer";
-import Nav from "./Nav";
+import Nav2 from "./Nav2";
 
 // import './db.json';
 
@@ -18,13 +18,14 @@ function App() {
 
   return (
     <div className="App">
-      <Nav />
+      <Nav2 />
       {/* <h3>hello dorks</h3>
       <button onClick={buttonClick}>click me bby</button> */}
       <br />
       <hr />
       <br />
       <HomesContainer />
+      <br />
     </div>
   );
 }
