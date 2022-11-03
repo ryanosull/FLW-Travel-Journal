@@ -6,9 +6,9 @@ function HomeCardFront ({home}) {
 
 
     return (
-        <div>
+        <div className="homeCardFront">
             <h2>{home.name}</h2>
-            <img className="minHouseTile" src={home.image} alt="" />
+            <img className="homeImage" src={home.image} alt="" />
         </div>
     )
 };

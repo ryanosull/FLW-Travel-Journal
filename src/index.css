@@ -1,22 +1,3 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.minHouseTile {
-  width: 1000px;
-  height: 500px;
-  background-size: cover;
-}
 
 .FLW-logo {
   width: 100%;
@@ -25,14 +6,60 @@ code {
 }
 
 .houseTile {
-  display: inline;
-  background-repeat: no-repeat;
-  background-position: center 90%;
+  display: flex;
+
   float: left;
   margin: 2%;
-  padding: .5%;
-  outline: #7f1711 double thick;
-  transition: 1.75s;
-  opacity: 1;
+  /* padding: 0.25%; */
+  outline-width: 8px;
+  outline-color: #bb8c4f;
+  outline-style: double;
+  align-content: center;
 }
 
+/* .HomesCard {
+  float: right,
+} */
+
+.homeCardRear {
+  background-color:#e25d54;
+  padding: 5%;
+  font-family: Georgia;
+  text-align: center;
+  text-overflow: clip;
+  width: 1000px;
+  height: 500px;
+}
+
+.homeCardFront {
+  background-color:#4d663e ;
+  /* padding: 10px; */
+  padding: 5px;
+}
+
+.homeImage {
+  width: 1000px;
+  height: 500px;
+  background-size: cover;
+  align-self: center;
+  padding-top: 1px;
+}
+
+
+/* lions mane #bb8c4f */
+
+.body {
+  background-color: #2e5169;
+}
+
+.navLogo {
+  padding: 2px;
+}
+
+.navSegment {
+  background-color: #bb8c4f;
+}
+/* 
+.test {
+  background-color: aqua;
+} */

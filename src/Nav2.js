@@ -1,18 +1,18 @@
 import React from "react";
 import logo from "./assets/logo.jpg";
-import {Segment, Header} from 'semantic-ui-react';
+// import {Segment ,Header, Image} from 'semantic-ui-react';
 
-const Nav = () => {
+const Nav2 = () => {
 	return (
-        <div>
-            <Segment inverted vertical >
-                <Header as="h2" >A Travel Guide to Frank Lloyd Wright Homes</Header>
-                <img src={logo} alt="" /> 
-            </Segment>
+        <div >
+            <div class="navSegment" >
+                <h2 >A Travel Guide to Frank Lloyd Wright Homes</h2>
+                <img src={logo} alt="" centered class="navLogo"/> 
+            </div>
         </div>
 	);
 };
 
-export default Nav;
+export default Nav2;
 
 // color=#e3b270

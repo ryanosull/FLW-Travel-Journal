@@ -13,7 +13,7 @@ function HomeCardRear ({home}) {
 
     return (
         <div>
-            <h3>
+            <h3 className="homeCardRear">
                 {renderHomeDetails}
             </h3>
         </div>

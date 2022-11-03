@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import HomeCardFront from "./HomeCardFront";
 import HomeCardRear from "./HomeCardRear";
 
-function HomeCard ({home}) {
+function HomesCard ({home}) {
 
     const [showDetails, setShowDetails] = useState(false)
 
@@ -12,7 +12,7 @@ function HomeCard ({home}) {
 
 
     return (
-        <div className = "ui eight wide column" onClick={toggleHomeDetails} >
+        <div className = "HomesCard" onClick={toggleHomeDetails} >
             <div className = 'houseTile'>
                 {
                     showDetails ? 
@@ -26,4 +26,4 @@ function HomeCard ({home}) {
 
 };
 
-export default HomeCard;
+export default HomesCard;

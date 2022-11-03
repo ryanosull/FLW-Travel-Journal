@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import HomesCard from "./HomeCard"
+import HomesCard from "./HomesCard"
 
 const homesUrl = "http://localhost:8000/flwHomes"
 
