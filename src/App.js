@@ -3,7 +3,7 @@ import './index.css';
 import HomesContainer from "./HomesContainer";
 import Nav from "./Nav";
 import Sort from "./Sort";
-// import Filter from "./Filter"
+import Filter from "./Filter"
 
 
 
@@ -33,6 +33,7 @@ function App() {
       <br/>
       <Sort />
       <br />
+      <Filter />
       <br />
       <HomesContainer />
       <br />
