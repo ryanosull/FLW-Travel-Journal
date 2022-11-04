@@ -4,7 +4,7 @@ import logo from "./assets/logo.jpg";
 
 
 //should h2 be a span?
-const Nav2 = () => {
+const Nav = () => {
 	return (
         <div >
             <div class="navSegment" >
@@ -15,6 +15,6 @@ const Nav2 = () => {
 	);
 };
 
-export default Nav2;
+export default Nav;
 
 // color=#e3b270

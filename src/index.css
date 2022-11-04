@@ -1,3 +1,8 @@
+.App {
+  text-align: center;
+}
+
+
 .sortBy {
   /* background-color:  #63584c; */
   /* background: #5e686c; */
@@ -81,7 +86,7 @@
 } */
 
 
-/* delivs: 
+/* delivs: ** note the App.css file
 -get red logo to take up top nav/header, surround with gold line(s)
 -float travel guide text on top of red logo - z index with positioning?
 - figure out top padding on front of home card, why won't it go?

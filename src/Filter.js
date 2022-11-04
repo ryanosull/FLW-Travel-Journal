@@ -1,14 +1,14 @@
 import React from "react";
 
-function Filter () {
+function Filter ({changeFilter}) {
 
 
     return (
         <div>
-            <select className="filter-by">
+            <select className="filter-by" onChange={(e) => changeFilter (e.target.value)} >
                 <option value="All">All</option>
-                <option value="True">Usonian</option>
-                <option value="False">non-Usonian</option>
+                <option value="Usonian">Usonian</option>
+                <option value="non-Usonian">non-Usonian</option>
             </select>            
         </div>
     )

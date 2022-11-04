@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import HomesCard from "./HomesCard"
+// import Filter from "./Filter"
 
 const homesUrl = "http://localhost:8000/flwHomes"
 
@@ -16,13 +17,30 @@ function HomesContainer () {
     const renderHomes = homes.map((home, index) => {
         return(
             <HomesCard home={home} key={index}/>
+            
         )
     })
+    
+
+    // const [filter, setFilter] = useState('All')
+
+    // function changeFilter (newFilter) {
+    //     setFilter(newFilter)
+    // }
+
+    // function filterHomes () {
+    //     if (filter === 'Usonian')
+    //         return homes.filter( home => home.usonian)
+    //     else if (filter === 'non-Usonian')
+    //         return homes.filter(home => !home.usonian)
+    // }
+
 
 
     return (
         <div>
             {renderHomes}
+            
         </div>
     )
 };
