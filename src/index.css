@@ -1,20 +1,32 @@
+.sortBy {
+  /* background-color:  #63584c; */
+  /* background: #5e686c; */
+  background-color: #053352;
+  font-weight: 800;
+  color: #bb8c4f;
+}
 
-.FLW-logo {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
+.sortBy-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
 }
 
 .houseTile {
-  display: flex;
+  display: table-cell;
 
   float: left;
   margin: 2%;
   /* padding: 0.25%; */
-  outline-width: 8px;
+  outline-width: 7px;
   outline-color: #bb8c4f;
   outline-style: double;
   align-content: center;
+
 }
 
 /* .HomesCard {
@@ -32,17 +44,19 @@
 }
 
 .homeCardFront {
-  background-color:#4d663e ;
+  background-color: #053352 ;
   /* padding: 10px; */
   padding: 5px;
 }
 
 .homeImage {
-  width: 1000px;
-  height: 500px;
+  width: 500px;
+  height: 250px;
   background-size: cover;
   align-self: center;
-  padding-top: 1px;
+  padding-top: none;
+  padding-right: 5px;
+  padding-left: 5px;
 }
 
 
@@ -53,13 +67,25 @@
 }
 
 .navLogo {
-  padding: 2px;
+  object-fit: cover;
+  height: 90%;
 }
 
 .navSegment {
   background-color: #bb8c4f;
+  height: 200px;
 }
 /* 
 .test {
   background-color: aqua;
 } */
+
+
+/* delivs: 
+-get red logo to take up top nav/header, surround with gold line(s)
+-float travel guide text on top of red logo - z index with positioning?
+- figure out top padding on front of home card, why won't it go?
+-back of card should be same size as front, text wrapped, etc. 
+-get these into a fucking grid
+-scroll and zoom in/out should display properly
+-bottom images cut off */
