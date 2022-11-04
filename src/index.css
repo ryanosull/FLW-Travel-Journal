@@ -28,13 +28,13 @@
   font-weight: 800;
   color: #bb8c4f;
   border-radius: 8px 8px 8px 8px;
-
-
+  width: 175px;
 }
 
 .sortFilterText {
   color: white;
   font-weight: bolder;
+  text-align: center;
 }
 
 /* .homesContainer {
@@ -43,9 +43,6 @@
 } */
 
 .houseTile {
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
   float: left;
   margin: 2%;
   padding: 0.25%;
@@ -55,6 +52,7 @@
   align-content: center;
 
 }
+
 
 .homeCardRear {
   background-color:#e25d54;
