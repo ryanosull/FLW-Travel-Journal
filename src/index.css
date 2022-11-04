@@ -2,31 +2,53 @@
   text-align: center;
 }
 
+.body {
+  background-color: #2e5169;
+}
 
-.sortBy {
+.navSegment {
+  background-color: #bb8c4f;
+  height: 300px;
+  background-image: url("https://franklloydwright.org/wp-content/uploads/2020/02/MC_Blog_QT1_IconBlogHeader-01-1440x640.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navText {
+  color: #053352;
+  font-size: 40px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+.drop-down {
   /* background-color:  #63584c; */
   /* background: #5e686c; */
   background-color: #053352;
   font-weight: 800;
   color: #bb8c4f;
+  border-radius: 8px 8px 8px 8px;
+
+
 }
 
-.sortBy-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
+.sortFilterText {
+  color: white;
+  font-weight: bolder;
 }
 
-.select-selected.select-arrow-active:after {
-  border-color: transparent transparent #fff transparent;
-  top: 7px;
-}
+/* .homesContainer {
+  padding: 1%;
+  padding-bottom: 5%;
+} */
 
 .houseTile {
-  display: table-cell;
-
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
   float: left;
   margin: 2%;
-  /* padding: 0.25%; */
+  padding: 0.25%;
   outline-width: 7px;
   outline-color: #bb8c4f;
   outline-style: double;
@@ -34,18 +56,17 @@
 
 }
 
-/* .HomesCard {
-  float: right,
-} */
-
 .homeCardRear {
   background-color:#e25d54;
-  padding: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 1%;
+  padding-right: 3%;
   font-family: Georgia;
   text-align: center;
-  text-overflow: clip;
-  width: 1000px;
-  height: 500px;
+  width: 500px;
+  height: 250px;
+  font-size:small
 }
 
 .homeCardFront {
@@ -64,26 +85,6 @@
   padding-left: 5px;
 }
 
-
-/* lions mane #bb8c4f */
-
-.body {
-  background-color: #2e5169;
-}
-
-.navLogo {
-  object-fit: cover;
-  height: 90%;
-}
-
-.navSegment {
-  background-color: #bb8c4f;
-  height: 200px;
-}
-/* 
-.test {
-  background-color: aqua;
-} */
 
 
 /* delivs: ** note the App.css file

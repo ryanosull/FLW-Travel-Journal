@@ -4,10 +4,10 @@ function Sort () {
 
 
     return (
-        <div>
-            <select className="sortBy">
-                <option value="Oldest">oldest first</option>
-                <option value="Newest">most recent first</option>
+        <div className="sortFilterText">Sort by:&nbsp;&nbsp;&nbsp;
+            <select className="drop-down">
+                <option value="Oldest">Oldest first</option>
+                <option value="Newest">Most recent first</option>
             </select>
         </div>
     )

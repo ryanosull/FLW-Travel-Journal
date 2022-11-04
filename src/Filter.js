@@ -4,8 +4,8 @@ function Filter () {
 
 
     return (
-        <div>
-            <select className="filter-by" onChange={(e) => changeFilter (e.target.value)} >
+        <div className="sortFilterText">Filter by:&nbsp;&nbsp;&nbsp;
+            <select className="drop-down" >
                 <option value="All">All</option>
                 <option value="Usonian">Usonian</option>
                 <option value="non-Usonian">non-Usonian</option>
@@ -15,3 +15,4 @@ function Filter () {
 };
 
 export default Filter;
+// onChange={(e) => changeFilter (e.target.value)} 

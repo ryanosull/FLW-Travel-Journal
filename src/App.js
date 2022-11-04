@@ -36,7 +36,6 @@ function App() {
       <Filter />
       <br />
       <HomesContainer />
-      <br />
     </div>
   );
 }

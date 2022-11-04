@@ -38,9 +38,8 @@ function HomesContainer () {
 
 
     return (
-        <div>
+        <div className='homesContainer'>
             {renderHomes}
-            
         </div>
     )
 };
