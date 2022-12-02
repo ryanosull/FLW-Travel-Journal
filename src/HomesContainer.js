@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import HomesCard from "./HomesCard"
-import Filter from "./Filter"
+// import Filter from "./Filter"
 
 const homesUrl = "http://localhost:8000/flwHomes"
 
