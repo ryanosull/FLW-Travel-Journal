@@ -7,7 +7,7 @@
 }
 
 .navSegment {
-  background-color: #bb8c4f;
+  /* background-color: #bb8c4f; */
   height: 300px;
   background-image: url("https://franklloydwright.org/wp-content/uploads/2020/02/MC_Blog_QT1_IconBlogHeader-01-1440x640.jpg");
   display: flex;
@@ -20,6 +20,8 @@
   font-size: 40px;
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
+
+/* //#053352;   - last you checked  color for Nav Text was not right.*/
 
 .drop-down {
   /* background-color:  #63584c; */
