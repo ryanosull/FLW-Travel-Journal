@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from "react";
 import HomesCard from "./HomesCard"
-// import Filter from "./Filter"
+import Filter from "./Filter"
 
 const homesUrl = "http://localhost:8000/flwHomes"
 
@@ -32,14 +32,7 @@ function HomesContainer () {
             <HomesCard home={home} key={index}/>
         )
     })
-    
-    // const renderFilter = homes.map ((home) => {
-    //     return {
-    //         <Filter home={home} />
-    //     }
-    // })
 
-    // // see above, asshole
 
 
     // const [filter, setFilter] = useState('All')
@@ -66,3 +59,6 @@ function HomesContainer () {
 };
 
 export default HomesContainer;
+
+
+// json-server db.json --watch --port 8000
