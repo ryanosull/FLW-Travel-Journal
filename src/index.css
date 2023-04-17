@@ -26,6 +26,7 @@
 .drop-down {
   /* background-color:  #63584c; */
   /* background: #5e686c; */
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
   background-color: #053352;
   font-weight: 800;
   color: #bb8c4f;
@@ -35,6 +36,7 @@
 
 .sortFilterText {
   color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
   font-weight: bolder;
   text-align: center;
 }
@@ -89,7 +91,7 @@
 
 
 
-/* delivs: ** note the App.css file
+/* delivs: ** 
 -get red logo to take up top nav/header, surround with gold line(s)
 -float travel guide text on top of red logo - z index with positioning?
 - figure out top padding on front of home card, why won't it go?
