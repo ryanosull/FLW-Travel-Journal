@@ -1,7 +1,7 @@
 import React from "react";
 import './index.css';
 import HomesContainer from "./HomesContainer";
-import Nav from "./Nav";
+import Header from "./Header";
 import Sort from "./Sort";
 import Filter from "./Filter"
 
@@ -29,7 +29,7 @@ function App() {
 
   return (
     <div className="App">
-      <Nav />
+      <Header />
       <br/>
       <Sort />
       <br />

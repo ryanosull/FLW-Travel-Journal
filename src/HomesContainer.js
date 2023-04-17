@@ -1,8 +1,9 @@
 import React, {useState, useEffect} from "react";
 import HomesCard from "./HomesCard"
-import Filter from "./Filter"
 
-const homesUrl = "http://localhost:8000/flwHomes"
+
+const baseUrl = "http://localhost:8000/"
+const homesUrl = baseUrl + "flwHomes"
 
 function HomesContainer () {
 
@@ -27,9 +28,9 @@ function HomesContainer () {
         .then(homeData => setHomes(homeData))
     }, [])
 
-    const renderHomes = homes.map((home, index) => {
+    const renderHomes = homes.map((home) => {
         return(
-            <HomesCard home={home} key={index}/>
+            <HomesCard home={home}/>
         )
     })
 
