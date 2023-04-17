@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .body {
@@ -40,27 +40,27 @@
   text-align: center;
 }
 
-.homesContainer {
-  /* padding: 1%;
-  padding-bottom: 5%; */
+.homesCard {
+  /* padding: 1%; */
+  padding-bottom: 5%;
 
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%;
+  width: 100%; */
   
 }
 
-.houseTile {
+.homesCard {
 
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   flex-basis: 100%;
-  flex: 1;
+  flex: 1; */
 
-  float: left;
-  margin: 2%;
-  padding: 0.25%;
+  /* float: left; */
+  /* margin: 2%; */
+  /* padding: .25%; */
   outline-width: 7px;
   outline-color: #bb8c4f;
   outline-style: double;
@@ -72,21 +72,24 @@
 
 .homeCardRear {
   background-color:#e25d54;
-  padding-top: 3%;
+  /* padding-top: 3%;
   padding-bottom: 3%;
   padding-left: 1%;
-  padding-right: 3%;
+  padding-right: 3%; */
   font-family: Georgia;
   text-align: center;
   width: 500px;
   height: 250px;
-  font-size:small
+  font-size:small;
+
+
 }
 
 .homeCardFront {
   background-color: #053352 ;
   /* padding: 10px; */
   padding: 5px;
+
 
   
 }
@@ -96,9 +99,22 @@
   height: 250px;
   background-size: cover;
   align-self: center;
-  padding-top: none;
   padding-right: 5px;
   padding-left: 5px;
+}
+
+#row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+#column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
 }
 
 

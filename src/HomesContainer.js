@@ -52,7 +52,7 @@ function HomesContainer () {
 
 
     return (
-        <div className='homesContainer'>
+        <div className='homesContainer' id="row" >
             {renderHomes}
             {/* {renderFilter} */}
         </div>

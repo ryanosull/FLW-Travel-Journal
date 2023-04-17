@@ -12,8 +12,8 @@ function HomesCard ({home}) {
 
 
     return (
-        <div className = "HomesCard" onClick={toggleHomeDetails} >
-            <div className = 'houseTile'>
+        <div className = "homesCard" onClick={toggleHomeDetails} >
+            <div className = 'houseTile' id="column" >
                 {
                     showDetails ? 
                     <HomeCardRear home={home} />

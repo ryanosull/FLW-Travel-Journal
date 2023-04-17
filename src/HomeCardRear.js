@@ -7,7 +7,7 @@ function HomeCardRear ({home}) {
 
     for (let key in home) {
         if (key !=="id" && key !== "Decade Completed" && key !=="image" && key !=="likes")
-            renderHomeDetails.push(<ul>{`${key}: ${home[key]}`}</ul>)
+            renderHomeDetails.push(<ol>{`${key}: ${home[key]}`}</ol>)
     }
 
 
