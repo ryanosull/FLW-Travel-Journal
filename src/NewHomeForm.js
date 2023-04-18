@@ -22,7 +22,7 @@ function NewHomeForm () {
 
 
                 <input className="formInputs" placeholder="Image URL" ></input>
-                <button id="newHomeSubmit" type="submit" >Add your home!</button>
+                <button id="newHomeSubmit" type="submit" >Add a new home!</button>
                 
             </form>
         </div>
