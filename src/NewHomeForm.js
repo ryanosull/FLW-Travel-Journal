@@ -7,6 +7,7 @@ const homesUrl = baseUrl + "flwHomes/"
 function NewHomeForm ({homes, setHomes}) {
 
     const [name, setName] = useState("")
+    const [date, setDate] = useState("")
     const [description, setDescription] = useState("")
     const [city, setCity] = useState("")
     const [state, setState] = useState("") // lol
@@ -21,6 +22,7 @@ function NewHomeForm ({homes, setHomes}) {
 
         let newHome = {
             name: name,
+            date: date,
             description: description,
             city: city, 
             state: state,
@@ -31,6 +33,7 @@ function NewHomeForm ({homes, setHomes}) {
         }
 
         setName("")
+        setDate("")
         setDescription("")
         setCity("")
         setState("")
@@ -57,6 +60,9 @@ function NewHomeForm ({homes, setHomes}) {
 
                 <input onChange={(e) => setName(e.target.value)} 
                 type="text" name="name" value={name} className="formInputs" placeholder="Name" required />
+
+                <input onChange={(e) => setDate(e.target.value)} 
+                type="date" name="date" value={date} className="formInputs"  />
 
                 <textarea onChange={(e) => setDescription(e.target.value)}
                 type="text" name="description" value={description} className="formInputs" maxLength="500" placeholder="Description" required />
