@@ -1,3 +1,4 @@
+import { render } from "@testing-library/react";
 import React from "react";
 
 
@@ -8,9 +9,10 @@ function HomeCardRear ({home, handleDelete}) {
 
     const renderHomeDetails = []
 
+
     for (let key in home) {
         if (key !=="id" && key !=="image")
-            renderHomeDetails.push(<ol>{`${key.charAt(0).toUpperCase() + key.slice(1)}: ${home[key]}`}</ol>)
+            renderHomeDetails.push(<ol key={key} >{`${key.charAt(0).toUpperCase() + key.slice(1)}: ${home[key]}`}</ol>)
     }
 
 //     const str = 'flexiple';
@@ -30,7 +32,7 @@ function HomeCardRear ({home, handleDelete}) {
         <div>
             <h3 className="homeCardRear">
                 {renderHomeDetails}
-                <button id="removeButton" onClick={handleBackendDelete} >Remove</button>
+                <button id="removeButton" onClick={handleBackendDelete}>Delete</button>
             </h3>
         </div>
     )

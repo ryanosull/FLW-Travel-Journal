@@ -89,14 +89,14 @@
       "rating": 0
     },
     {
-      "name": "true",
-      "description": "adsfa",
-      "city": "adfadsf",
-      "state": "",
-      "completed": "1111",
-      "usonian": "test",
-      "rating": "1",
-      "image": "",
+      "name": "fdg",
+      "description": "aadf",
+      "city": "asdf",
+      "state": "aasdf",
+      "completed": 1111,
+      "usonian": true,
+      "rating": 4,
+      "image": "asdfadf",
       "id": 9
     }
   ]

@@ -11,9 +11,9 @@ function NewHomeForm ({homes, setHomes}) {
     const [description, setDescription] = useState("")
     const [city, setCity] = useState("")
     const [state, setState] = useState("") // lol
-    const [completed, setCompleted] = useState("")//integer
-    const [usonian, setUsonian] = useState("test")//boolean, what goes in ()? empty?
-    const [rating, setRating] = useState("")//integer
+    const [completed, setCompleted] = useState()//integer
+    const [usonian, setUsonian] = useState("")//boolean, what goes in ()? empty? null?
+    const [rating, setRating] = useState()//integer
     const [image, setImage] = useState("")
 
     function handleSubmitHome(e){
@@ -25,9 +25,9 @@ function NewHomeForm ({homes, setHomes}) {
             description: description,
             city: city, 
             state: state,
-            completed: completed,
-            usonian: usonian,
-            rating: rating,
+            completed: parseInt(completed),
+            usonian: usonian === "true",
+            rating: parseInt(rating),
             image: image,
         }
 
@@ -36,7 +36,7 @@ function NewHomeForm ({homes, setHomes}) {
         setCity("")
         setState("")
         setCompleted("")
-        setUsonian()
+        setUsonian("Usonian?")
         setRating("")
         setImage("")
 
@@ -68,19 +68,19 @@ function NewHomeForm ({homes, setHomes}) {
                 <input onChange={(e) => setState(e.target.value)} className="formInputs"
                 type="text" name="state" value={state} placeholder="State" />
 
-                <input onChange={(e) => setCompleted(e.target.value)} className="formInputs"
-                type="text" name="completed" value={completed}
-                minLength="4" maxLength="4" placeholder="Year Completed" />
+                <input onChange={(e) => (setCompleted(e.target.value))} className="formInputs"
+                type="number" name="completed" value={completed}
+                minLength="4" maxLength="4" min="0" placeholder="Year Completed" />
 
                 {/* <label>Usonian?</label> */}
-                <select className="usonianDropdown" placeholder="Usonian" required >
+                <select value={usonian} onChange={(e) => setUsonian(e.target.value)} className="usonianDropdown" placeholder="Usonian" required >
                     <option className="usonianDropdown" >Usonian?</option>
-                    <option onChange className="usonianDropdown" name="true" value={true} >True</option>
+                    <option className="usonianDropdown" name="true" value={true}  >True</option>
                     <option className="usonianDropdown" name="false" value={false} >False</option>
                 </select>
 
                 <input onChange={(e) => setRating(e.target.value)} className="formInputs"
-                type="number" name="rating" value={rating} min="0" max="10" maxLength="1" placeholder="Rating" />
+                type="number" name="rating" value={parseInt(rating)} min="0" max="10" maxLength="1" placeholder="Rating" />
 
                 <input onChange={(e) => setImage(e.target.value)} className="formInputs"
                 type="text" name="image" value={image} placeholder="Image URL" />
