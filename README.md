@@ -70,8 +70,20 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-db.json
+### Environment Setup
 
+In a new terminal, run: `json-server db.json --watch --port 8000` to start the backend server.
+
+In a seperate terminal, run: `npm start` to start the development browser.
+
+
+### JSON Data
+
+After deleting cards, use the below JSON to repopulate the db.json file, or use the command:  `git restore db.json`
+
+db.json starter data:
+
+```yaml
 {
     "flwHomes": [
         {

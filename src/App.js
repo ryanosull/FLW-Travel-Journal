@@ -52,7 +52,10 @@ function App() {
     else return sortedHomes
   }
 
-
+  function handleDelete(id) {
+    const newHomes = homes.filter(home => home.id !== id )
+    setHomes(newHomes)
+  }
 
 
   return (
@@ -63,7 +66,7 @@ function App() {
       <br />
       <Filter changeFilter = {changeFilter} />
       <br />
-      <HomesContainer homes={sortHomes()}/>
+      <HomesContainer homes={sortHomes()} handleDelete={handleDelete}/>
     </div>
   );
 }

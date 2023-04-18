@@ -4,7 +4,7 @@ import React from "react";
 const baseUrl = "http://localhost:8000/"
 const homesUrl = baseUrl + "flwHomes/"
 
-function HomeCardRear ({home}) {
+function HomeCardRear ({home, handleDelete}) {
 
     const renderHomeDetails = []
 
@@ -13,17 +13,18 @@ function HomeCardRear ({home}) {
             renderHomeDetails.push(<ol>{`${key}: ${home[key]}`}</ol>)
     }
 
-    function handleDelete() {
+    function handleBackendDelete() {
         fetch(`${homesUrl}${home.id}`, {
             method: "DELETE"
-        }).then(res => console.log(res))
+        });
+        handleDelete(home.id);
     }
 
     return (
         <div>
             <h3 className="homeCardRear">
                 {renderHomeDetails}
-                <button id="removeButton" onClick={handleDelete} >Remove</button>
+                <button id="removeButton" onClick={handleBackendDelete} >Remove</button>
             </h3>
         </div>
     )
