@@ -8,7 +8,7 @@ import Filter from "./Filter"
 
 
 const baseUrl = "http://localhost:8000/"
-const homesUrl = baseUrl + "flwHomes"
+const homesUrl = baseUrl + "flwHomes/"
 
 function App() {
 
