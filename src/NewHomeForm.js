@@ -68,7 +68,7 @@ function NewHomeForm ({homes, setHomes}) {
                 type="text" name="state" value={state} placeholder="State" />
 
                 <input onChange={(e) => setCompleted(e.target.value)} className="formInputs"
-                type="number" name="completed" value={completed}
+                type="text" name="completed" value={completed}
                 minLength="4" maxLength="4" min="0" placeholder="Year Completed" />
 
                 <select value={usonian} onChange={(e) => setUsonian(e.target.value)} className="usonianDropdown" placeholder="Usonian" required >
