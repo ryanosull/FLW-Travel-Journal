@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+//
 
 
 const baseUrl = "http://localhost:8000/"
@@ -11,7 +12,7 @@ function NewHomeForm ({homes, setHomes}) {
     const [city, setCity] = useState("")
     const [state, setState] = useState("") // lol
     const [completed, setCompleted] = useState("")//integer
-    const [usonian, setUsonian] = useState()//boolean, what goes in ()? empty?
+    const [usonian, setUsonian] = useState("test")//boolean, what goes in ()? empty?
     const [rating, setRating] = useState("")//integer
     const [image, setImage] = useState("")
 
@@ -74,8 +75,8 @@ function NewHomeForm ({homes, setHomes}) {
                 {/* <label>Usonian?</label> */}
                 <select className="usonianDropdown" placeholder="Usonian" required >
                     <option className="usonianDropdown" >Usonian?</option>
-                    <option onChange className="usonianDropdown" value={true} >True</option>
-                    <option className="usonianDropdown" value={false} >False</option>
+                    <option onChange className="usonianDropdown" name="true" value={true} >True</option>
+                    <option className="usonianDropdown" name="false" value={false} >False</option>
                 </select>
 
                 <input onChange={(e) => setRating(e.target.value)} className="formInputs"
