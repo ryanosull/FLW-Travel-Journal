@@ -4,7 +4,7 @@ import HomesCard from "./HomesCard"
 
 
 
-function HomesContainer ({homes}) {
+function HomesContainer ({homes, handleDelete}) {
 
     
 
@@ -25,7 +25,7 @@ function HomesContainer ({homes}) {
 
     const renderHomes = homes.map((home) => {
         return(
-            <HomesCard home={home} key={home.id}/>
+            <HomesCard home={home} key={home.id} handleDelete={handleDelete}/>
         )
     })
 

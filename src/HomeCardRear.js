@@ -1,7 +1,10 @@
 import React from "react";
 
 
-function HomeCardRear ({home}) {
+const baseUrl = "http://localhost:8000/"
+const homesUrl = baseUrl + "flwHomes/"
+
+function HomeCardRear ({home, handleDelete}) {
 
     const renderHomeDetails = []
 
@@ -10,11 +13,18 @@ function HomeCardRear ({home}) {
             renderHomeDetails.push(<ol>{`${key}: ${home[key]}`}</ol>)
     }
 
+    function handleBackendDelete() {
+        fetch(`${homesUrl}${home.id}`, {
+            method: "DELETE"
+        });
+        handleDelete(home.id);
+    }
 
     return (
         <div>
             <h3 className="homeCardRear">
                 {renderHomeDetails}
+                <button id="removeButton" onClick={handleBackendDelete} >Remove</button>
             </h3>
         </div>
     )

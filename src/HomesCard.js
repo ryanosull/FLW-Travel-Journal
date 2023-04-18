@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import HomeCardFront from "./HomeCardFront";
 import HomeCardRear from "./HomeCardRear";
 
-function HomesCard ({home}) {
+function HomesCard ({home, handleDelete}) {
 
     const [showDetails, setShowDetails] = useState(false)
 
@@ -16,7 +16,7 @@ function HomesCard ({home}) {
             <div className = 'houseTile' id="column" >
                 {
                     showDetails ? 
-                    <HomeCardRear home={home} key={home.id} />
+                    <HomeCardRear home={home} key={home.id} handleDelete={handleDelete} />
                     :
                     <HomeCardFront home={home} />
                 }
