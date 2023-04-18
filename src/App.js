@@ -71,7 +71,7 @@ function App() {
       <Filter changeFilter = {changeFilter} />
       <br />
       <HomesContainer homes={sortHomes()} handleDelete={handleDelete}/>
-      <img src={guggenheim} alt="https://londonfabriccompany.com/wp-content/uploads/sites/8/2019/02/frank-lloyd-wright.jpg"  ></img>
+      <img id="gugg" src={guggenheim} alt="https://londonfabriccompany.com/wp-content/uploads/sites/8/2019/02/frank-lloyd-wright.jpg"/>
     </div>
   );
 }
