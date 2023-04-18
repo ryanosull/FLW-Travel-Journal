@@ -9,8 +9,8 @@ const Header = () => {
 	return (
         <div >
             <div className="headerSegment" >
-                <img src={flwPattern} />
-                <h2 className="headerText" >A Journal of Frank Lloyd Wright Homes</h2> 
+                <img id="flwPattern" src={flwPattern} />
+                <h2 className="headerText" >Frank Lloyd Wright Travel Journal</h2> 
             </div>
         </div>
 	);
