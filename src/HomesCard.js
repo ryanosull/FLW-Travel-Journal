@@ -16,7 +16,7 @@ function HomesCard ({home}) {
             <div className = 'houseTile' id="column" >
                 {
                     showDetails ? 
-                    <HomeCardRear home={home} />
+                    <HomeCardRear home={home} key={home.id} />
                     :
                     <HomeCardFront home={home} />
                 }
