@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 //
 
-
 const baseUrl = "http://localhost:8000/"
 const homesUrl = baseUrl + "flwHomes/"
 
@@ -11,9 +10,9 @@ function NewHomeForm ({homes, setHomes}) {
     const [description, setDescription] = useState("")
     const [city, setCity] = useState("")
     const [state, setState] = useState("") // lol
-    const [completed, setCompleted] = useState()//integer
+    const [completed, setCompleted] = useState("")//integer
     const [usonian, setUsonian] = useState("")//boolean, what goes in ()? empty? null?
-    const [rating, setRating] = useState()//integer
+    const [rating, setRating] = useState("")//integer
     const [image, setImage] = useState("")
 
     function handleSubmitHome(e){
@@ -55,9 +54,9 @@ function NewHomeForm ({homes, setHomes}) {
     return (
         <div>
             <form onSubmit={handleSubmitHome} id="newHomeForm" >
+
                 <input onChange={(e) => setName(e.target.value)} 
                 type="text" name="name" value={name} className="formInputs" placeholder="Name" />
-
 
                 <textarea onChange={(e) => setDescription(e.target.value)}
                 type="text" name="description" value={description} className="formInputs" maxLength="500" placeholder="Description" />
@@ -68,11 +67,10 @@ function NewHomeForm ({homes, setHomes}) {
                 <input onChange={(e) => setState(e.target.value)} className="formInputs"
                 type="text" name="state" value={state} placeholder="State" />
 
-                <input onChange={(e) => (setCompleted(e.target.value))} className="formInputs"
+                <input onChange={(e) => setCompleted(e.target.value)} className="formInputs"
                 type="number" name="completed" value={completed}
                 minLength="4" maxLength="4" min="0" placeholder="Year Completed" />
 
-                {/* <label>Usonian?</label> */}
                 <select value={usonian} onChange={(e) => setUsonian(e.target.value)} className="usonianDropdown" placeholder="Usonian" required >
                     <option className="usonianDropdown" >Usonian?</option>
                     <option className="usonianDropdown" name="true" value={true}  >True</option>
@@ -80,7 +78,7 @@ function NewHomeForm ({homes, setHomes}) {
                 </select>
 
                 <input onChange={(e) => setRating(e.target.value)} className="formInputs"
-                type="number" name="rating" value={parseInt(rating)} min="0" max="10" maxLength="1" placeholder="Rating" />
+                type="number" name="rating" value={rating} min="0" max="10" maxLength="1" placeholder="Rating" />
 
                 <input onChange={(e) => setImage(e.target.value)} className="formInputs"
                 type="text" name="image" value={image} placeholder="Image URL" />
