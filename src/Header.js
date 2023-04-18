@@ -8,7 +8,7 @@ const Header = () => {
 	return (
         <div >
             <div className="headerSegment" >
-                <h2 className="headerText" >A Travel Guide to Frank Lloyd Wright Homes</h2> 
+                <h2 className="headerText" >A Journal of Frank Lloyd Wright Homes</h2> 
             </div>
         </div>
 	);
