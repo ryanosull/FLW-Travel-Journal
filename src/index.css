@@ -89,9 +89,10 @@
   background-color: #053352 ;
   /* padding: 10px; */
   padding: 5px;
+}
 
-
-  
+#frontName {
+  color: #bb8c4f;
 }
 
 .homeImage {

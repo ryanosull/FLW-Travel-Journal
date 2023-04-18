@@ -9,9 +9,15 @@ function HomeCardRear ({home, handleDelete}) {
     const renderHomeDetails = []
 
     for (let key in home) {
-        if (key !=="id" && key !=="image" && key !=="likes")
-            renderHomeDetails.push(<ol>{`${key}: ${home[key]}`}</ol>)
+        if (key !=="id" && key !=="image")
+            renderHomeDetails.push(<ol>{`${key.charAt(0).toUpperCase() + key.slice(1)}: ${home[key]}`}</ol>)
     }
+
+//     const str = 'flexiple';
+// const str2 = str.charAt(0).toUpperCase() + str.slice(1);
+// console.log(str2);
+
+//Output: Flexiple
 
     function handleBackendDelete() {
         fetch(`${homesUrl}${home.id}`, {

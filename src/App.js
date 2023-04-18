@@ -64,7 +64,7 @@ function App() {
     <div className="App">
       <Header />
       <br/>
-      <NewHomeForm />
+      <NewHomeForm homes={homes} setHomes={setHomes} />
       <br/>
       <Sort changeSort={changeSort} />
       <br/>
