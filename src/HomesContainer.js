@@ -1,13 +1,12 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import HomesCard from "./HomesCard"
 
 
-const baseUrl = "http://localhost:8000/"
-const homesUrl = baseUrl + "flwHomes"
 
-function HomesContainer () {
 
-    const [homes, setHomes] = useState([])
+function HomesContainer ({homes}) {
+
+    
 
 
     // const [filteredHomes, setFilteredHomes]= useSate([])
@@ -22,33 +21,13 @@ function HomesContainer () {
 
     // }
 
-    useEffect (() => {
-        fetch(homesUrl)
-        .then(resp => resp.json())
-        .then(homeData => setHomes(homeData))
-    }, [])
+
 
     const renderHomes = homes.map((home) => {
         return(
-            <HomesCard home={home}/>
+            <HomesCard home={home} key={home.id}/>
         )
     })
-
-
-
-    // const [filter, setFilter] = useState('All')
-
-    // function changeFilter (newFilter) {
-    //     setFilter(newFilter)
-    // }
-
-    // // function filterHomes () {
-    //     if (filter === 'Usonian')
-    //         return homes.filter( home => home.usonian)
-    //     else if (filter === 'non-Usonian')
-    //         return homes.filter(home => !home.usonian)
-    // // }
-
 
 
     return (
@@ -62,4 +41,3 @@ function HomesContainer () {
 export default HomesContainer;
 
 
-// json-server db.json --watch --port 8000

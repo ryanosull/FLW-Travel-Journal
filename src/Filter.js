@@ -1,11 +1,11 @@
 import React from "react";
 
-function Filter () {
+function Filter ({changeFilter}) {
 
 
     return (
         <div className="sortFilterText">Filter by:&nbsp;&nbsp;&nbsp;
-            <select className="drop-down" >
+            <select className="drop-down" onChange={(e) => changeFilter(e.target.value)} >
                 <option value="All">All</option>
                 <option value="Usonian">Usonian</option>
                 <option value="non-Usonian">non-Usonian</option>
