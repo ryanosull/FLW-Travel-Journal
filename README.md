@@ -81,7 +81,7 @@ In a seperate terminal, run: `npm start` to start the development browser.
 
 After deleting cards, use the below JSON to repopulate the db.json file, or use the command:  `git restore db.json`
 
-db.json starter data:
+### `db.json starter data:`
 
 ```yaml
 

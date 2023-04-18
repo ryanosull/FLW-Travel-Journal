@@ -1,5 +1,5 @@
 .App {
-  /* text-align: center; */
+  text-align: center;
 }
 
 .body {
@@ -125,6 +125,15 @@
   border-radius: 8px 8px 8px 8px;
   width: 175px;
   cursor: pointer;
+}
+
+#newHomeSubmit {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  background-color:  #bb8c4f;
+  font-weight: 800;
+  color: #053352;
+  border-radius: 8px 8px 8px 8px;
+  width: 175px;
 }
 
 
