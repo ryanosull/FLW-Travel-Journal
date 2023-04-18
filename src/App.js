@@ -65,6 +65,7 @@ function App() {
       <Header />
       <br/>
       <NewHomeForm />
+      <br/>
       <Sort changeSort={changeSort} />
       <br/>
       <Filter changeFilter = {changeFilter} />
