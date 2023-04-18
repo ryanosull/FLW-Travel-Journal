@@ -69,12 +69,12 @@ function NewHomeForm ({homes, setHomes}) {
 
                 <input onChange={(e) => setCompleted(e.target.value)} className="formInputs"
                 type="number" name="completed" value={completed}
-                minLength="4" maxLength="4" min="1867" max="1959" placeholder="Year Completed" />
+                minLength="4" maxLength="4" min="1867" max="1959" placeholder="Year Completed" required />
 
                 <select value={usonian} onChange={(e) => setUsonian(e.target.value)} className="usonianDropdown" placeholder="Usonian" required >
-                    <option className="usonianDropdown" >Usonian?</option>
-                    <option className="usonianDropdown" name="true" value={true}  >True</option>
-                    <option className="usonianDropdown" name="false" value={false} >False</option>
+                    <option className="usonianDropdown" value="" >Usonian?</option>
+                    <option className="usonianDropdown" name="true" value={true}>True</option>
+                    <option className="usonianDropdown" name="false" value={false}>False</option>
                 </select>
 
                 <input onChange={(e) => setRating(e.target.value)} className="formInputs"
