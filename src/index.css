@@ -1,5 +1,5 @@
 .App {
-  /* text-align: center; */
+  text-align: center;
 }
 
 .body {
@@ -89,9 +89,10 @@
   background-color: #053352 ;
   /* padding: 10px; */
   padding: 5px;
+}
 
-
-  
+#frontName {
+  color: #bb8c4f;
 }
 
 .homeImage {
@@ -125,6 +126,38 @@
   border-radius: 8px 8px 8px 8px;
   width: 175px;
   cursor: pointer;
+}
+
+/* #newHomeForm {
+  background-color: #e25d54;
+} */
+
+.formInputs {
+  background-color: #bb8c4f;
+  border-radius: 6px 6px 6px 6px;
+}
+
+::placeholder {
+  color: #053352;
+  font-weight: 550;
+}
+
+.usonianDropdown {
+  background-color: #bb8c4f;
+  color: #053352;
+  font-weight: 550;
+  border-radius: 6px 6px 6px 6px;
+  width: 150px;
+  text-align: center;
+}
+
+#newHomeSubmit {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  background-color:  #e25d54;
+  font-weight: 800;
+  color: #053352;
+  border-radius: 6px 6px 6px 6px;
+  width: 175px;
 }
 
 
