@@ -31,7 +31,8 @@ function HomeCardRear ({home, handleDelete}) {
         <div>
             <h3 className="homeCardRear">
                 {renderHomeDetails}
-                <button id="removeButton" onClick={handleBackendDelete}>Delete</button>
+                <button id="editButton" >Edit</button>
+                <button id="deleteButton" onClick={handleBackendDelete}>Delete</button>
             </h3>
         </div>
     )
