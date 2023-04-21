@@ -84,9 +84,6 @@ After deleting cards, use the below JSON to repopulate the db.json file, or use 
 ### `db.json starter data:`
 
 ```yaml
-
-
-
 {
     "flwHomes": [
         {

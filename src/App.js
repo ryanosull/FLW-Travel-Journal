@@ -5,7 +5,7 @@ import Header from "./Header";
 import Sort from "./Sort";
 import Filter from "./Filter"
 import NewHomeForm from "./NewHomeForm";
-import test from "../src/assets/guggenheim.png"
+import guggenheim from "../src/assets/guggenheim.png"
 //
 
 
@@ -71,7 +71,7 @@ function App() {
       <Filter changeFilter = {changeFilter} />
       <br />
       <HomesContainer homes={sortHomes()} handleDelete={handleDelete}/>
-      <img src={test} alt="https://londonfabriccompany.com/wp-content/uploads/sites/8/2019/02/frank-lloyd-wright.jpg"  ></img>
+      <img src={guggenheim} alt="https://londonfabriccompany.com/wp-content/uploads/sites/8/2019/02/frank-lloyd-wright.jpg"  ></img>
     </div>
   );
 }
