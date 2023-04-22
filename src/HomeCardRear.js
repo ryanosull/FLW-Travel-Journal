@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 // import EditDetails from "./EditDetails";
-
 const baseUrl = "http://localhost:8000/"
 const homesUrl = baseUrl + "flwHomes/"
 
@@ -9,6 +8,11 @@ function HomeCardRear ({home, handleDelete}) {
     const [showEditForm, setShowEditForm] = useState(true)
 
     const [usonian, setUsonian] = useState("")
+
+    function toggleEditForm() {
+        setShowEditForm(!showEditForm)
+        // console.log("testing...123")      c.log works, why won't editForm appear?
+    }
 
     function handleBackendDelete() {
         fetch(`${homesUrl}${home.id}`, {
@@ -21,10 +25,6 @@ function HomeCardRear ({home, handleDelete}) {
         console.log("this will be PATCH submit")
     }
 
-    function toggleEditForm() {
-        setShowEditForm(!showEditForm)
-        // console.log("testing...123")      c.log works, why won't editForm appear?
-    }
 
     return (
         <div id="thisParentDiv" >
@@ -34,11 +34,11 @@ function HomeCardRear ({home, handleDelete}) {
                 <div className="homeCardRear">
                     <form id="editHomeForm">
 
-                        <h2>Name: <input className="formInputs" type="text" value={home.name}/></h2>
+                        <h4>Name: <input className="formInputs" type="text" value={home.name}/></h4>
 
-                        <h3>Date visited: <input className="formInputs" type="text" value={home.date}/></h3>
+                        <h4>Date visited: <input className="formInputs" type="text" value={home.date}/></h4>
 
-                        <h4> <textarea className="formInputs" type="text" value={home.description}/></h4>
+                        <h4>Description: <textarea className="formInputs" type="text" value={home.description}/></h4>
 
                         <h4>City: <input className="formInputs" type="text" value={home.city} /></h4>
 
