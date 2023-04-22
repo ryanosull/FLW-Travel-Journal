@@ -1,4 +1,5 @@
 import React from "react";
+import EditDetails from "./EditDetails";
 
 
 const baseUrl = "http://localhost:8000/"
@@ -27,11 +28,15 @@ function HomeCardRear ({home, handleDelete}) {
         handleDelete(home.id);
     }
 
+    function handleEditForm() {
+        return <EditDetails />
+    }
+
     return (
         <div>
             <h3 className="homeCardRear">
                 {renderHomeDetails}
-                <button id="editButton" >Edit</button>
+                <button id="editButton" onClick={handleEditForm} >Edit</button>
                 <button id="deleteButton" onClick={handleBackendDelete}>Delete</button>
             </h3>
         </div>

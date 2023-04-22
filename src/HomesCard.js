@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import HomeCardFront from "./HomeCardFront";
 import HomeCardRear from "./HomeCardRear";
 
+
 function HomesCard ({home, handleDelete}) {
 
     const [showDetails, setShowDetails] = useState(false)
