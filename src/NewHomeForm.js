@@ -62,7 +62,7 @@ function NewHomeForm ({homes, setHomes}) {
                 type="text" name="name" value={name} className="formInputs" placeholder="Name" required />
 
                 <input onChange={(e) => setDate(e.target.value)} 
-                type="date" name="date" value={date} className="formInputs"  />
+                type="date" name="date" value={date} className="formInputs" required />
 
                 <textarea onChange={(e) => setDescription(e.target.value)}
                 type="text" name="description" value={description} className="formInputs" maxLength="500" placeholder="Description" required />
