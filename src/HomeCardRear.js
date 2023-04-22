@@ -21,6 +21,7 @@ function HomeCardRear ({home, handleDelete}) {
 
     return (
         <div className="homeCardRear">
+            <form>
                 <h2>{home.name}</h2>
                 <h3>{home.date}</h3>
                 <p>{home.description}</p>
@@ -31,6 +32,7 @@ function HomeCardRear ({home, handleDelete}) {
                 <p>{home.rating}</p>
                 <button id="editButton" onClick={handleEditForm} >Edit</button>
                 <button id="deleteButton" onClick={handleBackendDelete}>Delete</button>
+            </form>
         </div>
     )
 };
