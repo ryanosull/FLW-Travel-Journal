@@ -34,14 +34,14 @@ function HomeCardRear ({home, handleDelete}) {
                 <div className="homeCardRear">
                     <h2>{home.name}</h2>
                     <h3>Date visited: {home.date}</h3>
-                    <p>{home.description}</p>
-                    <p>City: {home.city}</p>
-                    <p>State: {home.state}</p>
-                    <p>Year Completed: {home.completed}</p>
-                    <p>Usonian: {home.usonian.toString()} </p>
-                    <p>Rating: {home.rating}</p>
-                    <button id="editButton" onClick={handleEditForm} >Edit</button>
-                    <button id="deleteButton" onClick={handleBackendDelete}>Delete</button>
+                    <h4>{home.description}</h4>
+                    <h4>City: {home.city}</h4>
+                    <h4>State: {home.state}</h4>
+                    <h4>Year Completed: {home.completed}</h4>
+                    <h4>Usonian: {home.usonian.toString()} </h4>
+                    <h4>Rating: {home.rating}</h4>
+                    <button className="cardButtons" onClick={handleEditForm} >Edit</button>
+                    <button className="cardButtons" onClick={handleBackendDelete}>Delete</button>
                 </div>
                 :
                 "new edit form"
@@ -50,33 +50,32 @@ function HomeCardRear ({home, handleDelete}) {
             <div className="homeCardRear">
                 <form id="editHomeForm">
 
-                    <h2>{home.name}</h2>
+                    <h2>Name: <input className="formInputs" type="text" value={home.name}/></h2>
 
                     <h3>Date visited: <input className="formInputs" type="text" value={home.date}/></h3>
 
-                    <p> <textarea className="formInputs" type="text" value={home.description}/></p>
+                    <h4> <textarea className="formInputs" type="text" value={home.description}/></h4>
 
-                    <p>City: <input className="formInputs" type="text" value={home.city} /></p>
+                    <h4>City: <input className="formInputs" type="text" value={home.city} /></h4>
 
-                    <p>State: <input className="formInputs" type="text" value={home.state}/></p>
+                    <h4>State: <input className="formInputs" type="text" value={home.state}/></h4>
 
-                    <p>Year Completed: <input className="formInputs" type="date" value={home.completed}/></p>
+                    <h4>Year Completed: <input className="formInputs" type="date" value={home.completed}/></h4>
 
-                    <p>Usonian: 
+                    <h4>Usonian: 
                         {/* {home.usonian.toString()}  */}
-                        <select value={usonian} onChange={(e) => setUsonian(e.target.value)} className="usonianDropdown" placeholder="Usonian" required >
+                        <select value={home.usonian} onChange={(e) => setUsonian(e.target.value)} className="usonianDropdown" placeholder="Usonian" required >
                             <option className="usonianDropdown" value="" >Usonian?</option>
                             <option className="usonianDropdown" name="true" value={true}>true</option>
                             <option className="usonianDropdown" name="false" value={false}>false</option>
                         </select>
-                    </p>
+                    </h4>
 
-                    <p>Rating: <input className="formInputs" type="number" value={home.rating}/></p>
+                    <h4>Rating: <input className="formInputs" type="number" value={home.rating}/></h4>
 
+                    <button className="cardButtons" onClick={handleEditForm} >Cancel</button>
+                    <button className="cardButtons" onClick={handleBackendDelete}>Save</button>
 
-
-                    <button id="cancelButton" onClick={handleEditForm} >Cancel</button>
-                    <button id="saveButton" onClick={handleBackendDelete}>Save</button>
                 </form>
             </div>
 
