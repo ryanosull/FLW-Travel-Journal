@@ -7,7 +7,7 @@ function HomesCard ({home, handleDelete}) {
 
     const [showDetails, setShowDetails] = useState(false)
 
-    function toggleHomeDetails () {
+    function toggleHomeDetails() {
         setShowDetails(!showDetails)
     }
 
