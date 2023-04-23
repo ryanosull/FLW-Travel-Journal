@@ -25,6 +25,10 @@ function HomeCardRear ({home, handleDelete}) {
         console.log("this will be PATCH submit")
     }
 
+    function handleCancelEdit() {
+        console.log("this will be PATCH CANCEL")
+    }
+
 
     return (
         <div id="thisParentDiv" >
@@ -57,8 +61,9 @@ function HomeCardRear ({home, handleDelete}) {
 
                         <h4>Rating: <input className="formInputs" type="number" value={home.rating} min="0" max="10" maxLength="1" /></h4>
 
-                        <button className="cardButtons" onClick={handleEditForm} >Cancel</button>
-                        <button className="cardButtons" onClick={handleBackendDelete}>Save</button>
+                        <button className="cardButtons" onClick={handleCancelEdit} >Cancel</button>
+                        {/* cancel button should render details card */}
+                        <button className="cardButtons" onClick={handleEditForm}>Save</button>
 
                     </form>
                 </div>
