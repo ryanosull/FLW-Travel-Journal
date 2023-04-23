@@ -83,18 +83,6 @@
       "usonian": true,
       "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Seamour_and_Gerte_Shavin_House.jpg",
       "rating": 0
-    },
-    {
-      "name": "dasdfasdf",
-      "date": "2023-04-12",
-      "description": "asdfafd",
-      "city": "adsfasdf",
-      "state": "adsfasdfaf",
-      "completed": 1867,
-      "usonian": true,
-      "rating": 1,
-      "image": "",
-      "id": 9
     }
   ]
 }
