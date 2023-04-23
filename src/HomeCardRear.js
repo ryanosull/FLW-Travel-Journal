@@ -59,7 +59,7 @@ function HomeCardRear ({home, handleDelete}) {
                             </select>
                         </h4>
 
-                        <h4>Rating: <input className="formInputs" type="number" value={home.rating} min="0" max="10" maxLength="1" /></h4>
+                        <h4>Rating: <input className="formInputs" type="number" value={home.rating} min="0" max="10" maxLength="1" /> / 10</h4>
 
                         <button className="cardButtons" onClick={handleCancelEdit} >Cancel</button>
                         {/* cancel button should render details card */}
