@@ -29,40 +29,6 @@ function HomeCardRear ({home, handleDelete}) {
     return (
         <div id="thisParentDiv" >
 
-            {showEditForm ? 
-                
-                <div className="homeCardRear">
-                    <form id="editHomeForm">
-
-                        <h4>Name: <input className="formInputs" type="text" value={home.name}/></h4>
-
-                        <h4>Date visited: <input className="formInputs" type="text" value={home.date}/></h4>
-
-                        <h4>Description: <textarea className="formInputs" type="text" value={home.description}/></h4>
-
-                        <h4>City: <input className="formInputs" type="text" value={home.city} /></h4>
-
-                        <h4>State: <input className="formInputs" type="text" value={home.state}/></h4>
-
-                        <h4>Year Completed: <input className="formInputs" type="date" value={home.completed}/></h4>
-
-                        <h4>Usonian: 
-                            {/* {home.usonian.toString()}  */}
-                            <select value={home.usonian} onChange={(e) => setUsonian(e.target.value)} className="usonianDropdown" placeholder="Usonian" required >
-                                <option className="usonianDropdown" value="" >Usonian?</option>
-                                <option className="usonianDropdown" name="true" value={true}>true</option>
-                                <option className="usonianDropdown" name="false" value={false}>false</option>
-                            </select>
-                        </h4>
-
-                        <h4>Rating: <input className="formInputs" type="number" value={home.rating}/></h4>
-
-                        <button className="cardButtons" onClick={handleEditForm} >Cancel</button>
-                        <button className="cardButtons" onClick={handleBackendDelete}>Save</button>
-
-                    </form>
-                </div>
-                :
                 <div className="homeCardRear">
                     <h2>{home.name}</h2>
                     <h3>Date visited: {home.date}</h3>
@@ -77,7 +43,7 @@ function HomeCardRear ({home, handleDelete}) {
 
                     <button className="cardButtons" onClick={handleBackendDelete}>Delete</button>
                 </div>
-            }
+            
 
         </div>    
     )
