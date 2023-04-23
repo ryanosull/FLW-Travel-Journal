@@ -1,6 +1,18 @@
 {
   "flwHomes": [
     {
+      "id": 1,
+      "name": "Frederick C. Robie House",
+      "date": "1910-12-25",
+      "description": "The Frederick C. Robie House is a U.S. National Historic Landmark now on the campus of the University of Chicago in the South Side neighborhood of Hyde Park in Chicago, Illinois. ",
+      "city": "Chicago",
+      "state": "Illinois",
+      "completed": 1910,
+      "usonian": false,
+      "image": "https://live.staticflickr.com/65535/49539496622_c997329f78_b.jpg",
+      "rating": 5
+    },
+    {
       "id": 2,
       "name": "Frank Lloyd Wright Home and Studio",
       "date": "2003-06-02",
