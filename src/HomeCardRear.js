@@ -70,7 +70,7 @@ function HomeCardRear ({home, handleDelete, toggleHomeDetails}) {
                 :
                 <div className="homeCardRear">
 
-                    <div  onClick={toggleHomeDetails} >
+                    <div   >
                         <h2>{home.name}</h2>
                         <h3>Date visited: {home.date}</h3>
                         <h4>{home.description}</h4>
@@ -82,8 +82,8 @@ function HomeCardRear ({home, handleDelete, toggleHomeDetails}) {
                     </div>
 
                     <button className="cardButtons" onClick={toggleEditForm} >Edit</button>
-
                     <button className="cardButtons" onClick={handleBackendDelete}>Delete</button>
+                    <button className="cardButtons" onClick={toggleHomeDetails} >View image</button>
                 </div>
             }
 
