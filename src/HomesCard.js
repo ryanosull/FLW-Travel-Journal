@@ -13,13 +13,13 @@ function HomesCard ({home, handleDelete}) {
 
 
     return (
-        <div className = "homesCard" onClick={toggleHomeDetails} >
+        <div className = "homesCard"  >
             <div className = 'houseTile' id="column" >
                 {
                     showDetails ? 
-                    <HomeCardRear home={home} key={home.id} handleDelete={handleDelete} />
+                    <HomeCardRear home={home} key={home.id} handleDelete={handleDelete} toggleHomeDetails={toggleHomeDetails} />
                     :
-                    <HomeCardFront home={home} />
+                    <HomeCardFront home={home} toggleHomeDetails={toggleHomeDetails} />
                 }
             </div>
         </div>

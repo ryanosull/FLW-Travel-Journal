@@ -78,4 +78,5 @@ function App() {
 
 export default App;
 
-// json-server db.json --watch --port 8000
+//In a new terminal: `` json-server db.json --watch --port 8000 ``
+//In a seperate terminal: `` npm install `` then `` npm start ``

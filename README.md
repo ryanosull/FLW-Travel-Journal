@@ -74,7 +74,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 In a new terminal, run: `json-server db.json --watch --port 8000` to start the backend server.
 
-In a seperate terminal, run: `npm start` to start the development browser.
+In a seperate terminal, run: `npm install`, then `npm start` to start the development browser.
 
 
 ### JSON Data
