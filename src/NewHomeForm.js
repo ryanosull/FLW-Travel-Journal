@@ -79,8 +79,8 @@ function NewHomeForm ({homes, setHomes}) {
 
                 <select value={usonian} onChange={(e) => setUsonian(e.target.value)} className="usonianDropdown" placeholder="Usonian" required >
                     <option className="usonianDropdown" value="" >Usonian?</option>
-                    <option className="usonianDropdown" name="true" value={true}>True</option>
-                    <option className="usonianDropdown" name="false" value={false}>False</option>
+                    <option className="usonianDropdown" name="true" value={true}>true</option>
+                    <option className="usonianDropdown" name="false" value={false}>false</option>
                 </select>
 
                 <input onChange={(e) => setRating(e.target.value)} className="formInputs"
