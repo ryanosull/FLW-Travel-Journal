@@ -31,26 +31,33 @@ function App() {
       setFilter(newFilter)
   }
 
+
   function changeSort (newSort) {
     setSort(newSort)
   }
 
   function filterHomes () {
     if (filter === 'Usonian')
-      return homes.filter(home => home.Usonian)
+      return homes.filter(home => home.usonian)
     else if (filter === "non-Usonian")  
-      return homes.filter(home => !home.Usonian)
+      return homes.filter(home => !home.usonian)
     else return [...homes]
   }
 
 
   function sortHomes () {
+
+    
+
     let sortedHomes = filterHomes()
 
-    if (sort === "Oldest")
-      return sortedHomes.sort((year1, year2) => year1.Completed - year2.Completed)
-    else if (sort === "Newest" )
-      return sortedHomes.sort((year1, year2) => year2.Completed - year1.Completed)
+    if (sort === "Oldest") {
+      return sortedHomes.sort((year1, year2) => year1.completed - year2.completed)
+    }
+    else if (sort === "Newest" ) {
+    
+      return sortedHomes.sort((year1, year2) => year2.completed - year1.completed)
+    }
     else return sortedHomes
   }
 
