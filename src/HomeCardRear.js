@@ -36,15 +36,15 @@ function HomeCardRear ({home, handleDelete}) {
 
                         <h4>Name: <input className="formInputs" type="text" value={home.name}/></h4>
 
-                        <h4>Date visited: <input className="formInputs" type="text" value={home.date}/></h4>
+                        <h4>Date visited: <input className="formInputs" type="date" value={home.date}/></h4>
 
-                        <h4>Description: <textarea className="formInputs" type="text" value={home.description}/></h4>
+                        <h4>Description: <textarea className="formInputs" type="text" value={home.description} maxLength="500" /></h4>
 
                         <h4>City: <input className="formInputs" type="text" value={home.city} /></h4>
 
                         <h4>State: <input className="formInputs" type="text" value={home.state}/></h4>
 
-                        <h4>Year Completed: <input className="formInputs" type="date" value={home.completed}/></h4>
+                        <h4>Year Completed: <input className="formInputs" type="number" value={home.completed} minLength="4" maxLength="4" min="1867" max="1959" /></h4>
 
                         <h4>Usonian: 
                             {/* {home.usonian.toString()}  */}
@@ -55,7 +55,7 @@ function HomeCardRear ({home, handleDelete}) {
                             </select>
                         </h4>
 
-                        <h4>Rating: <input className="formInputs" type="number" value={home.rating}/></h4>
+                        <h4>Rating: <input className="formInputs" type="number" value={home.rating} min="0" max="10" maxLength="1" /></h4>
 
                         <button className="cardButtons" onClick={handleEditForm} >Cancel</button>
                         <button className="cardButtons" onClick={handleBackendDelete}>Save</button>
