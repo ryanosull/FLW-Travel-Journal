@@ -7,9 +7,11 @@ function HomeCardFront ({home, toggleHomeDetails}) {
 
 
     return (
-        <div onClick={toggleHomeDetails} className="homeCardFront" >
+        <div className="homeCardFront" >
             <h2 id="frontName">{home.name}</h2>
             <img  className="homeImage" src={home.image} alt="oh noooooo!" />
+            <br/>
+            <button onClick={toggleHomeDetails} className="cardButtons" >View details</button>
         </div>
     )
 };
