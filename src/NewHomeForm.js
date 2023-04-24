@@ -60,7 +60,8 @@ function NewHomeForm ({homes, setHomes}) {
 
                 <input onChange={(e) => setName(e.target.value)} 
                 type="text" name="name" value={name} className="formInputs" placeholder="Name" required />
-
+                
+                <label className="sortFilterText">Date visited:</label>
                 <input onChange={(e) => setDate(e.target.value)} 
                 type="date" name="date" value={date} className="formInputs" required />
 
