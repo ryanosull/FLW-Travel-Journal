@@ -11,7 +11,6 @@ function HomesCard ({home, handleDelete}) {
         setShowDetails(!showDetails)
     }
 
-
     return (
         <div className = "homesCard"  >
             <div className = 'houseTile' id="column" >
@@ -23,8 +22,7 @@ function HomesCard ({home, handleDelete}) {
                 }
             </div>
         </div>
-    )
-
+    );
 };
 
 export default HomesCard;

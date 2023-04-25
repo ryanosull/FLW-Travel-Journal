@@ -5,13 +5,29 @@ const homesUrl = baseUrl + "flwHomes/"
 
 function HomeCardRear ({home, handleDelete, toggleHomeDetails}) {
 
+    // const [usonian, setUsonian] = useState("")
+
+
+
     const [showEditForm, setShowEditForm] = useState(false)
 
-    const [usonian, setUsonian] = useState("")
+    // const [editedName, setEditedName] = useState()
+    // const [editedDate, setEditedDate] = useState("")
+    // const [editedDescription, setEditedDescription] = useState("")
+    // const [editedCity, setEditedCity] = useState("")
+    // const [editedState, setEditedState] = useState("") // lol
+    // const [editedCompleted, setEditedCompleted] = useState("")//integer
+    // const [editedUsonian, setEditedUsonian] = useState("")//boolean, what goes in ()? empty? null?
+    // const [editedRating, setEditedRating] = useState("")//integer
+    // const [editedImage, setEditedImage] = useState("")
+
+    const [formData, setFormData] = useState({
+        name: "",   ///from here, see burgerBuddy  form submit. if you can get it all hooked up in a similar manner, great. may run into issues with dynamic edit/auto population. if so, get form hooked up first, then work on auto pop. test burgerbuddy method.
+
+    })
 
     function toggleEditForm() {
         setShowEditForm(!showEditForm)
-        // console.log("testing...123")      c.log works, why won't editForm appear?
     }
 
     function handleBackendDelete() {
@@ -21,12 +37,9 @@ function HomeCardRear ({home, handleDelete, toggleHomeDetails}) {
         handleDelete(home.id);
     }
 
-    function handleEditForm() {
+    function handleSubmitEdit(e) {
+        e.preventDefault(e)
         console.log("this will be PATCH submit")
-    }
-
-    function handleCancelEdit() {
-        console.log("this will be PATCH CANCEL")
     }
 
 
@@ -37,40 +50,45 @@ function HomeCardRear ({home, handleDelete, toggleHomeDetails}) {
                 
                 <div className="homeCardRear">
                     <form id="editHomeForm">
+                        
+                        {/* <h4>Name: <input onChange={(e) => setEditedName({...editedName, name: e.target.value}) } className="formInputs" type="text" value={home.name} /></h4> */}
 
-                        <h4>Name: <input className="formInputs" type="text" value={home.name}/></h4>
+                        <h4>Name: <input onChange={handleSubmitEdit} className="formInputs" type="text" value={home.name} /></h4>
 
-                        <h4>Date visited: <input className="formInputs" type="date" value={home.date}/></h4>
+                        <h4>Date visited: <input onChange={(e) => setEditedDate(e.target.value)} className="formInputs" type="date" value={home.date} /></h4>
 
-                        <h4>Description: <textarea className="formInputs" type="text" value={home.description} maxLength="500" /></h4>
+                        <h4>Description: <textarea onChange={(e) => setEditedDescription(e.target.value)} className="formInputs" type="text" value={home.description} maxLength="500" /></h4>
 
-                        <h4>City: <input className="formInputs" type="text" value={home.city} /></h4>
+                        <h4>City: <input onChange={(e) => setEditedCity(e.target.value)} className="formInputs" type="text" value={home.city} /></h4>
 
-                        <h4>State: <input className="formInputs" type="text" value={home.state}/></h4>
+                        <h4>State: <input onChange={(e) => setEditedState(e.target.value)} className="formInputs" type="text" value={home.state} /></h4>
 
-                        <h4>Year Completed: <input className="formInputs" type="number" value={home.completed} minLength="4" maxLength="4" min="1867" max="1959" /></h4>
+                        <h4>Year Completed: <input onChange={(e) => setEditedCompleted(e.target.value)} className="formInputs" type="number" value={home.completed} minLength="4" maxLength="4" min="1867" max="1959" /></h4>
 
                         <h4>Usonian: 
                             {/* {home.usonian.toString()}  */}
-                            <select value={home.usonian} onChange={(e) => setUsonian(e.target.value)} className="usonianDropdown" placeholder="Usonian" required >
+                            <select value={home.usonian} onChange={(e) => setEditedUsonian(e.target.value)} className="usonianDropdown" placeholder="Usonian" required >
                                 <option className="usonianDropdown" value="" >Usonian?</option>
                                 <option className="usonianDropdown" name="true" value={true}>true</option>
                                 <option className="usonianDropdown" name="false" value={false}>false</option>
                             </select>
                         </h4>
 
-                        <h4>Rating: <input className="formInputs" type="number" value={home.rating} min="0" max="10" maxLength="1" /> / 10</h4>
+                        <h4>Rating: <input onChange={(e) => setEditedRating(e.target.value)} className="formInputs" type="number" value={home.rating} min="0" max="10" maxLength="1" /> / 10</h4>
 
-                        <button className="cardButtons" onClick={handleCancelEdit} >Cancel</button>
+                        <h4>Image URL: <input onChange={(e) => setEditedImage(e.target.value)} className="formInputs" type="text" value={home.image} /> / 10</h4>
+
+                        <button className="cardButtons" onClick={toggleEditForm} >Cancel</button>
                         {/* cancel button should render details card */}
-                        <button className="cardButtons" onClick={handleEditForm}>Save</button>
+                        <button className="cardButtons" type="submit" onClick={handleSubmitEdit}>Save</button>
 
                     </form>
                 </div>
-                :
-                <div className="homeCardRear">
 
-                    <div  onClick={toggleHomeDetails} >
+                : ////////ternary
+
+                <div className="homeCardRear">
+                    <div   >
                         <h2>{home.name}</h2>
                         <h3>Date visited: {home.date}</h3>
                         <h4>{home.description}</h4>
@@ -82,8 +100,8 @@ function HomeCardRear ({home, handleDelete, toggleHomeDetails}) {
                     </div>
 
                     <button className="cardButtons" onClick={toggleEditForm} >Edit</button>
-
                     <button className="cardButtons" onClick={handleBackendDelete}>Delete</button>
+                    <button className="cardButtons" onClick={toggleHomeDetails} >View image</button>
                 </div>
             }
 

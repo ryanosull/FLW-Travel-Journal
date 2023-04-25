@@ -16,16 +16,15 @@ function App() {
 
   const [homes, setHomes] = useState([])
 
+  const [filter, setFilter] = useState("All")
+  const [sort, setSort] = useState("None")
+
   useEffect (() => {
     fetch(homesUrl)
     .then(resp => resp.json())
     .then(homeData => setHomes(homeData))
-}, [])
+  }, [])
 
-
-
-  const [filter, setFilter] = useState("All")
-  const [sort, setSort] = useState("None")
 
   function changeFilter (newFilter) {
       setFilter(newFilter)
@@ -46,8 +45,6 @@ function App() {
 
 
   function sortHomes () {
-
-    
 
     let sortedHomes = filterHomes()
 
@@ -78,7 +75,7 @@ function App() {
       <Filter changeFilter = {changeFilter} />
       <br />
       <HomesContainer homes={sortHomes()} handleDelete={handleDelete}/>
-      <img id="gugg" src={guggenheim} alt="https://londonfabriccompany.com/wp-content/uploads/sites/8/2019/02/frank-lloyd-wright.jpg"/>
+      <img id="gugg" src={guggenheim} alt="oh nooooo"/>
     </div>
   );
 }

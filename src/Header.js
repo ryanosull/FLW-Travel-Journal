@@ -10,8 +10,8 @@ const Header = () => {
 	return (
         <div >
             <div className="headerSegment" >
-                <img id="flwPattern" src={flwPattern} alt="" />
-                <h2 className="headerText" >Frank Lloyd Wright Travel Journal</h2> 
+                <img id="flwPattern" src={flwPattern} alt="oh nooooo" />
+                <h2 className="headerText" >Frank Lloyd Wright Travel Journal</h2>
             </div>
         </div>
 	);
