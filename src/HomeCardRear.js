@@ -22,7 +22,7 @@ function HomeCardRear ({home, handleDelete, toggleHomeDetails}) {
     // const [editedImage, setEditedImage] = useState("")
 
     const [formData, setFormData] = useState({
-        name: "",   ///from here, see burgerBuddy  form submit. if you can get it all hooked up in a similar manner, great. may run into issues with dynamic edit/auto population. if so, get form hooked up first, then work on auto pop. test burgerbuddy method.
+        name: "",   ///from here, see burgerBuddy  form submit. if you can get it all hooked up in a similar manner, great. may run into issues with dynamic edit/auto population. if so, get form hooked up first, then work on auto pop. test burgerbuddy method.  
 
     })
 
