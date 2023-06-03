@@ -2,7 +2,7 @@
   "flwHomes": [
     {
       "id": 1,
-      "name": "loooooooasdfadfasdfafa",
+      "name": "bbb",
       "date": "1929-07-17",
       "description": "asdfasdfasdfasdfasdf",
       "city": "asdfasdfasdfa",
@@ -14,15 +14,15 @@
     },
     {
       "id": 2,
-      "name": "Frank Lloyd Wright Home and Studio",
+      "name": "fuck youuuuuuu",
       "date": "2003-06-02",
       "description": "The Frank Lloyd Wright Home and Studio is a historic house and design studio in Oak Park, Illinois, which was designed and owned by architect Frank Lloyd Wright. First built in 1889 and added to over the years, the home and studio is furnished with original Wright-designed furniture and textiles.",
       "city": "Oak Park",
       "state": "Illinois",
-      "completed": 1889,
-      "usonian": false,
-      "image": "https://media.cntraveler.com/photos/5a8ee90e873a2240b39fffea/16:9/w_2560,c_limit/Frank-Lloyd-Wright-House-and-Studio-Tour_2018_StudioFacade_JamesCaulfield_July2017.jpg",
-      "rating": 1
+      "completed": "1881",
+      "usonian": "true",
+      "image": "https://media.cntraaaaaaaveler.com/photos/5a8ee90e873a2240b39fffea/16:9/w_2560,c_limit/Frank-Lloyd-Wright-House-and-Studio-Tour_2018_StudioFacade_JamesCaulfield_July2017.jpg",
+      "rating": "5"
     },
     {
       "id": 3,

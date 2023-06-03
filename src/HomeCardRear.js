@@ -44,7 +44,7 @@ function HomeCardRear ({home, handleDelete, toggleHomeDetails}) {
 
     function handleSubmitEdit(e) {
         e.preventDefault()
-        window.alert("success!")
+        
         //send to backend
         const requestOptions = {
             method: 'PATCH',
@@ -54,7 +54,10 @@ function HomeCardRear ({home, handleDelete, toggleHomeDetails}) {
 
         fetch(`${homesUrl}${home.id}`, requestOptions)
         .then(resp => resp.json())
-        .then(console.log(formData))
+        .then(console.log("test"))
+
+        toggleEditForm()
+        window.alert("success!")
 
     } 
     
@@ -95,7 +98,7 @@ function HomeCardRear ({home, handleDelete, toggleHomeDetails}) {
 
                         <button className="cardButtons" type="button" onClick={toggleEditForm} >Cancel</button>
 
-                        <button className="cardButtons" type="button" onClick={toggleEditForm} >Save</button>
+                        <button className="cardButtons" type="submit" onClick={handleSubmitEdit} >Save</button>
 
                     </form>
                 </div>
@@ -104,14 +107,14 @@ function HomeCardRear ({home, handleDelete, toggleHomeDetails}) {
 
                 <div className="homeCardRear">
                     <div   >
-                        <h2>{home.name}</h2>
-                        <h3>Date visited: {home.date}</h3>
-                        <h4>{home.description}</h4>
-                        <h4>City: {home.city}</h4>
-                        <h4>State: {home.state}</h4>
-                        <h4>Year Completed: {home.completed}</h4>
-                        <h4>Usonian: {home.usonian.toString()}</h4>
-                        <h4>Rating: {home.rating}</h4>
+                        <h2>{formData.name}</h2>
+                        <h3>Date visited: {formData.date}</h3>
+                        <h4>{formData.description}</h4>
+                        <h4>City: {formData.city}</h4>
+                        <h4>State: {formData.state}</h4>
+                        <h4>Year Completed: {formData.completed}</h4>
+                        <h4>Usonian: {formData.usonian.toString()}</h4>
+                        <h4>Rating: {formData.rating}</h4>
                     </div>
 
                     <button className="cardButtons" onClick={toggleEditForm} >Edit</button>
