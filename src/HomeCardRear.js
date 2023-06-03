@@ -5,7 +5,7 @@ import React, {useState} from "react";
 const baseUrl = "http://localhost:8000/"
 const homesUrl = baseUrl + "flwHomes/"
 
-function HomeCardRear ({home, homes, handleDelete, toggleHomeDetails}) {
+function HomeCardRear ({home, homes, setHomes, handleDelete, toggleHomeDetails}) {
 
     const [showEditForm, setShowEditForm] = useState(false)
 
@@ -52,12 +52,23 @@ function HomeCardRear ({home, homes, handleDelete, toggleHomeDetails}) {
 			body: JSON.stringify(formData),
         };
 
+        // fetch(`${homesUrl}${home.id}`, requestOptions)
+        // .then(resp => resp.json())
+        // .then(formData => setFormData([...homes, formData]))
+
+        // toggleEditForm()
+        // window.alert("Success!")
+
         fetch(`${homesUrl}${home.id}`, requestOptions)
         .then(resp => resp.json())
-        .then(formData => setFormData([...homes, formData]))
+        .then(updatedHome => {
+            const updatedHomes = homes.map(h => (h.id === updatedHome.id ? updatedHome : h));
+            setHomes(updatedHomes);
+            toggleEditForm();
+            
+        });
 
-        toggleEditForm()
-        window.alert("Success!")
+        window.alert("Success!");
 
     } 
     
