@@ -2,27 +2,27 @@
   "flwHomes": [
     {
       "id": 1,
-      "name": "bbb",
-      "date": "1929-07-17",
-      "description": "asdfasdfasdfasdfasdf",
-      "city": "asdfasdfasdfa",
-      "state": "5465465465465",
-      "completed": "1959",
-      "usonian": "false",
-      "image": "asdfadfasdfasd",
-      "rating": "0"
+      "name": "Frederick C. Robie House",
+      "date": "1910-12-25",
+      "description": "The Frederick C. Robie House is a U.S. National Historic Landmark now on the campus of the University of Chicago in the South Side neighborhood of Hyde Park in Chicago, Illinois. ",
+      "city": "Chicago",
+      "state": "Illinois",
+      "completed": 1910,
+      "usonian": false,
+      "image": "https://live.staticflickr.com/65535/49539496622_c997329f78_b.jpg",
+      "rating": 5
     },
     {
       "id": 2,
-      "name": "fuck youuuuuuu",
+      "name": "Frank Lloyd Wright Home and Studio",
       "date": "2003-06-02",
       "description": "The Frank Lloyd Wright Home and Studio is a historic house and design studio in Oak Park, Illinois, which was designed and owned by architect Frank Lloyd Wright. First built in 1889 and added to over the years, the home and studio is furnished with original Wright-designed furniture and textiles.",
       "city": "Oak Park",
       "state": "Illinois",
-      "completed": "1881",
-      "usonian": "true",
-      "image": "https://media.cntraaaaaaaveler.com/photos/5a8ee90e873a2240b39fffea/16:9/w_2560,c_limit/Frank-Lloyd-Wright-House-and-Studio-Tour_2018_StudioFacade_JamesCaulfield_July2017.jpg",
-      "rating": "5"
+      "completed": 1889,
+      "usonian": false,
+      "image": "https://media.cntraveler.com/photos/5a8ee90e873a2240b39fffea/16:9/w_2560,c_limit/Frank-Lloyd-Wright-House-and-Studio-Tour_2018_StudioFacade_JamesCaulfield_July2017.jpg",
+      "rating": 1
     },
     {
       "id": 3,
