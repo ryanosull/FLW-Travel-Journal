@@ -78,7 +78,7 @@ function NewHomeForm ({homes, setHomes}) {
                 type="number" name="completed" value={completed}
                 minLength="4" maxLength="4" min="1867" max="1959" placeholder="Year Completed" required />
 
-                <select value={usonian} onChange={(e) => setUsonian(e.target.value)} className="usonianDropdown" placeholder="Usonian" required >
+                <select value={usonian} onChange={(e) => setUsonian(e.target.value)} className="usonianDropdown" placeholder="Usonian" name="usonian" required >
                     <option className="usonianDropdown" value="" >Usonian?</option>
                     <option className="usonianDropdown" name="true" value={true}>true</option>
                     <option className="usonianDropdown" name="false" value={false}>false</option>
