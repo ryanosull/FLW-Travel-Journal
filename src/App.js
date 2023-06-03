@@ -74,7 +74,7 @@ function App() {
       <br/>
       <Filter changeFilter = {changeFilter} />
       <br />
-      <HomesContainer homes={sortHomes()} handleDelete={handleDelete}/>
+      <HomesContainer homes={sortHomes()} setHomes={setHomes} handleDelete={handleDelete}/>
       <img id="gugg" src={guggenheim} alt="oh nooooo"/>
     </div>
   );

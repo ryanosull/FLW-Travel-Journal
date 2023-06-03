@@ -4,14 +4,14 @@ import HomesCard from "./HomesCard"
 
 
 
-function HomesContainer ({homes, handleDelete}) {
+function HomesContainer ({homes, setHomes, handleDelete}) {
 
 
 
 
     const renderHomes = homes.map((home) => {
         return(
-            <HomesCard home={home} key={home.id} handleDelete={handleDelete}/>
+            <HomesCard home={home} homes={homes} setHomes={setHomes} key={home.id} handleDelete={handleDelete}/>
         )
     })
 

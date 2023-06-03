@@ -5,7 +5,7 @@ import React, {useState} from "react";
 const baseUrl = "http://localhost:8000/"
 const homesUrl = baseUrl + "flwHomes/"
 
-function HomeCardRear ({home, handleDelete, toggleHomeDetails}) {
+function HomeCardRear ({home, homes, handleDelete, toggleHomeDetails}) {
 
     const [showEditForm, setShowEditForm] = useState(false)
 
@@ -44,7 +44,7 @@ function HomeCardRear ({home, handleDelete, toggleHomeDetails}) {
 
     function handleSubmitEdit(e) {
         e.preventDefault()
-        
+
         //send to backend
         const requestOptions = {
             method: 'PATCH',
@@ -54,10 +54,10 @@ function HomeCardRear ({home, handleDelete, toggleHomeDetails}) {
 
         fetch(`${homesUrl}${home.id}`, requestOptions)
         .then(resp => resp.json())
-        .then(console.log("test"))
+        .then(formData => setFormData([...homes, formData]))
 
         toggleEditForm()
-        window.alert("success!")
+        window.alert("Success!")
 
     } 
     
@@ -107,14 +107,15 @@ function HomeCardRear ({home, handleDelete, toggleHomeDetails}) {
 
                 <div className="homeCardRear">
                     <div   >
-                        <h2>{formData.name}</h2>
-                        <h3>Date visited: {formData.date}</h3>
-                        <h4>{formData.description}</h4>
-                        <h4>City: {formData.city}</h4>
-                        <h4>State: {formData.state}</h4>
-                        <h4>Year Completed: {formData.completed}</h4>
-                        <h4>Usonian: {formData.usonian.toString()}</h4>
-                        <h4>Rating: {formData.rating}</h4>
+                        <h2>{home.name}</h2>
+                        <h3>Date visited: {home.date}</h3>
+                        <h4>{home.description}</h4>
+                        <h4>City: {home.city}</h4>
+                        <h4>State: {home.state}</h4>
+                        <h4>Year Completed: {home.completed}</h4>
+                        {/* <h4>Usonian: {formData.usonian.toString()}</h4> */}
+                        <h4>Usonian: {home.usonian.toString()}</h4>
+                        <h4>Rating: {home.rating}</h4>
                     </div>
 
                     <button className="cardButtons" onClick={toggleEditForm} >Edit</button>
@@ -130,6 +131,22 @@ function HomeCardRear ({home, handleDelete, toggleHomeDetails}) {
 
 
 export default HomeCardRear; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 //saving this code because I like it so much
@@ -152,8 +169,3 @@ export default HomeCardRear;
         // console.log(str2);
 
         //Output: Chicago
-
-
-//_________________________________
-// perhaps we have a ternary for the edit button clicked:
-//             editbuttonclicked ? display edit form with cancel and save buttons : display <div> containing p tags, etc. with edit and delete buttons
