@@ -68,6 +68,8 @@ function NewHomeForm ({homes, setHomes}) {
                 <textarea onChange={(e) => setDescription(e.target.value)}
                 type="text" name="description" value={description} className="formInputs" maxLength="500" placeholder="Description" required />
 
+                <br/>
+
                 <input onChange={(e) => setCity(e.target.value)}
                 type="text" name="city" value={city} className="formInputs" placeholder="City" required />
 
