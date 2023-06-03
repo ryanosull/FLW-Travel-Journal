@@ -50,7 +50,7 @@ function NewHomeForm ({homes, setHomes}) {
             body: JSON.stringify(newHome)
         }
         fetch(homesUrl, homePost)
-        .then(r => r.json())
+        .then(resp => resp.json())
         .then(newHome => setHomes([...homes, newHome]))
     }
 
