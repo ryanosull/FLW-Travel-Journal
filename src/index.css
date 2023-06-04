@@ -30,8 +30,9 @@
 .headerText {
   color: #053352;
   font-size: 40px;
+  font-weight:800;
   font-family: 'Architects Daughter', cursive;
-  margin-top: 70px;
+  margin-top: 50px;
   z-index: 1;
 }
 
@@ -114,11 +115,11 @@
 
 #newHomeSubmit {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-  background-color:  #e25d54;
+  background-color:  #3b0501;
   font-weight: 800;
   font-size: medium;
-  color: #053352;
-  border-radius: 6px 6px 6px 6px;
+  color: #bb8c4f;
+  border-radius: 120px 16px 120px 16px;
   width: 200px;
   height: 50px;
   cursor: pointer;
@@ -159,6 +160,21 @@
 
 
 /* cards ↓ */
+
+#flexRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+#flexColumn {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
 
 
 .homesCard {
@@ -222,21 +238,7 @@
 
 
 
-#row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  justify-content: center;
-}
 
-#column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  
-}
 
 
 

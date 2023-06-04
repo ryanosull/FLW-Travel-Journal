@@ -17,7 +17,7 @@ function HomesContainer ({homes, setHomes, handleDelete}) {
 
 
     return (
-        <div className='homesContainer' id="row" >
+        <div className='homesContainer' id="flexRow" >
             {renderHomes}
         </div>
     )
