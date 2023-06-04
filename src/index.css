@@ -56,6 +56,7 @@
 .formInputs {
   background-color: #bb8c4f;
   border-radius: 6px 6px 6px 6px;
+  margin: 7px;
 }
 
 ::placeholder {
@@ -64,42 +65,35 @@
 }
 
 #formName {
-  margin-right: 10px;
+  
   width: 150px;
+  
 }
 
-#formDate {
-  margin-left: 10px;
-}
+/* #formDate {
+  
+} */
 
 #formDescription {
   width: 300px;
   height: 100px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  
 }
 
 #formCity {
-  margin-bottom: 5px;
   width: 150px;
 }
 
 #formState {
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 5px;
   width: 150px;
 }
 
 #formCompleted {
   width: 150px;
-  margin-bottom: 5px;
 }
 
-#formUsonianDropdown {
-  margin-bottom: 5px;
-}
+/* #formUsonianDropdown {
+  
+} */
 
 .usonianDropdown {
   background-color: #bb8c4f;
@@ -111,8 +105,6 @@
 }
 
 #formRating {
-  margin-left: 5px;
-  margin-right: 5px;
   width: 70px;
 }
 
@@ -123,6 +115,11 @@
 
 
 /* sort and filter ↓ */
+
+#sortFilter{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
 
 .drop-down {
   /* background-color:  #63584c; */
@@ -141,6 +138,10 @@
   font-weight: bolder;
   text-align: center;
 }
+
+
+
+/* cards ↓ */
 
 .homesCard {
   /* padding: 1%; */
@@ -237,6 +238,11 @@
   width: 175px;
   cursor: pointer;
   margin: 20px;
+}
+
+#deleteButton:hover{
+  background-color:#e25d54;
+  color:#053352;
 }
 
 /* #newHomeForm {

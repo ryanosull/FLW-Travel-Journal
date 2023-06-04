@@ -70,11 +70,10 @@ function App() {
       <Header />
       
       <NewHomeForm homes={homes} setHomes={setHomes} />
-      
-      <Sort changeSort={changeSort} />
-      
-      <Filter changeFilter = {changeFilter} />
-      
+      <div id="sortFilter">
+        <Sort changeSort={changeSort} />
+        <Filter changeFilter = {changeFilter} />
+      </div>
       <HomesContainer homes={sortHomes()} setHomes={setHomes} handleDelete={handleDelete}/>
 
       <div id="guggDiv">

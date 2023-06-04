@@ -123,7 +123,7 @@ function HomeCardRear ({home, homes, setHomes, handleDelete, toggleHomeDetails})
                     </div>
 
                     <button className="cardButtons" onClick={toggleEditForm} >Edit</button>
-                    <button className="cardButtons" onClick={handleBackendDelete}>Delete</button>
+                    <button className="cardButtons" id="deleteButton" onClick={handleBackendDelete}>Delete</button>
                     <button className="cardButtons" onClick={toggleHomeDetails} >View image</button>
                 </div>
                 )

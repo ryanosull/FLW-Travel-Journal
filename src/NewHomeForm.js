@@ -99,7 +99,7 @@ function NewHomeForm ({homes, setHomes}) {
 
                 <br/>
 
-                <button id="newHomeSubmit" type="submit" >Add new home!</button>
+                <button id="newHomeSubmit" type="submit" >Add new home</button>
                 
             </form>
         </div>
