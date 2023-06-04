@@ -105,7 +105,7 @@
 }
 
 #formRating {
-  width: 70px;
+  width: 75px;
 }
 
 #formImage{
@@ -160,22 +160,14 @@
 
 /* cards ↓ */
 
-.homesCard {
-  /* padding: 1%; */
-  padding-bottom: 5%;
 
-  /* display: flex;
+.homesCard {
+
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 100%; */
-  
-}
-
-.homesCard {
-
-  /* display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
+  justify-content: center;
+  /* flex-basis: 100%;
   flex: 1; */
 
   /* float: left; */
@@ -185,6 +177,8 @@
   outline-color: #bb8c4f;
   outline-style: double;
   align-content: center;
+
+  margin: 15px;
 
 }
 
@@ -208,7 +202,7 @@
 .homeCardFront {
   background-color: #053352 ;
   /* padding: 10px; */
-  padding: 5px;
+  
 }
 
 #frontName {
@@ -233,6 +227,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  justify-content: center;
 }
 
 #column {
@@ -240,7 +235,14 @@
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+  
 }
+
+
+
+
+
+
 
 /* card buttons ↓ */
 
