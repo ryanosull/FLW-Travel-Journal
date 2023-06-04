@@ -52,13 +52,6 @@ function HomeCardRear ({home, homes, setHomes, handleDelete, toggleHomeDetails})
 			body: JSON.stringify(formData),
         };
 
-        // fetch(`${homesUrl}${home.id}`, requestOptions)
-        // .then(resp => resp.json())
-        // .then(formData => setFormData([...homes, formData]))
-
-        // toggleEditForm()
-        // window.alert("Success!")
-
         fetch(`${homesUrl}${home.id}`, requestOptions)
         .then(resp => resp.json())
         .then(updatedHome => {

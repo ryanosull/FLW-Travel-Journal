@@ -169,6 +169,47 @@
   font-weight: 550;
 }
 
+#formName {
+  margin-right: 10px;
+}
+
+#formDate {
+  margin-left: 10px;
+}
+
+#formDescription {
+  width: 300px;
+  height: 100px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  
+}
+
+#formCity {
+  margin-bottom: 5px;
+}
+
+#formState {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+#formCompleted {
+  width: 125px;
+  margin-bottom: 5px;
+}
+
+#formUsonianDropdown {
+  margin-bottom: 5px;
+}
+
+#formRating {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 70px;
+}
+
 .usonianDropdown {
   background-color: #bb8c4f;
   color: #053352;
@@ -184,8 +225,10 @@
   font-weight: 800;
   color: #053352;
   border-radius: 6px 6px 6px 6px;
-  width: 175px;
+  width: 200px;
+  height: 50px;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 #gugg {
