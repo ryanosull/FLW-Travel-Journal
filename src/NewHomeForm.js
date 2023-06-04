@@ -58,6 +58,7 @@ function NewHomeForm ({homes, setHomes}) {
         <div>
             <form onSubmit={handleSubmitHome} id="newHomeForm" >
 
+                
                 <input onChange={(e) => setName(e.target.value)} 
                 type="text" name="name" value={name} className="formInputs" id="formName" placeholder="Name" required />
                 
