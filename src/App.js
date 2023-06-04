@@ -66,6 +66,7 @@ function App() {
 
   return (
     <div className="App">
+
       <Header />
       <br/>
       <NewHomeForm homes={homes} setHomes={setHomes} />
@@ -75,7 +76,11 @@ function App() {
       <Filter changeFilter = {changeFilter} />
       <br />
       <HomesContainer homes={sortHomes()} setHomes={setHomes} handleDelete={handleDelete}/>
-      <img id="gugg" src={guggenheim} alt="oh nooooo"/>
+
+      <div id="guggDiv">
+        <img id="gugg" src={guggenheim} alt="oh nooooo"/>
+      </div>
+      
     </div>
   );
 }
