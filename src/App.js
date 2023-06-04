@@ -68,13 +68,13 @@ function App() {
     <div className="App">
 
       <Header />
-      <br/>
+      
       <NewHomeForm homes={homes} setHomes={setHomes} />
-      <br/>
+      
       <Sort changeSort={changeSort} />
-      <br/>
+      
       <Filter changeFilter = {changeFilter} />
-      <br />
+      
       <HomesContainer homes={sortHomes()} setHomes={setHomes} handleDelete={handleDelete}/>
 
       <div id="guggDiv">
