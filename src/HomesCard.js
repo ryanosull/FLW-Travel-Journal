@@ -8,19 +8,6 @@ function HomesCard ({home, homes, setHomes, handleDelete}) {
     const [showDetails, setShowDetails] = useState(false)
 
 
-
-///////////////
-
-    // const [formData, setFormData] = useState("test")
-
-    // function handleValueFromChild (value) {
-    //     setFormData(value)
-    // }
-
-////////////// for lifting state of formData - not sure this will work, need to modify array in PATCH .then
-
-
-
     function toggleHomeDetails() {
         setShowDetails(!showDetails)
     }
