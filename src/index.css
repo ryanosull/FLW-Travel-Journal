@@ -13,11 +13,8 @@
   align-items: center;
   margin-bottom: 20px;
 
-  /* padding-bottom: 200px; */
 }
-/* background-color: #bb8c4f; */
 
-/* background-image: url("https://franklloydwright.org/wp-content/uploads/2020/02/MC_Blog_QT1_IconBlogHeader-01-1440x640.jpg"); */
 
 #flwPattern{
   position: absolute;
@@ -133,10 +130,6 @@
 
 
 
-
-
-
-
 /* sort and filter ↓ */
 
 
@@ -169,10 +162,6 @@
 
 
 
-
-
-
-
 /* cards ↓ */
 
       /* cards - front ↓ */
@@ -194,7 +183,6 @@
 
 
 .homesCard {
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -211,7 +199,6 @@
   height: 550px;
 
 }
-
 
 .homeCardFront {
   background-color: #053352 ;
@@ -232,11 +219,7 @@
 .homeImage {
   height: 250px;
   width: 500px;
-  background-size: cover;
-  
-  
-  
-  
+  background-size: cover;  
 }
 
 
@@ -253,7 +236,6 @@
   font-family: 'Architects Daughter', cursive;
   text-align: center;
 
-
   font-size:medium;
   /* color: #bb8c4f;  original color */
   color: #ce9b58;
@@ -262,17 +244,11 @@
   width: 500px;
   overflow: auto;
   scrollbar-color: #bb8c4f;
-
-  
 }
 
 #homeDetails{
   padding: 5px;
 }
-
-
-
-
 
 
 
@@ -325,9 +301,9 @@
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #6b6d6b; 
+  background: #9a9a9a; 
 }
 
 ::-webkit-scrollbar-corner{
-  background-color: #e25d54;
+  background-color: #ffffff;
 }

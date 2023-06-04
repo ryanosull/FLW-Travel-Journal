@@ -58,13 +58,12 @@ function NewHomeForm ({homes, setHomes}) {
         <div>
             <form onSubmit={handleSubmitHome} id="newHomeForm" >
 
-                
-                <input onChange={(e) => setName(e.target.value)} 
-                type="text" name="name" value={name} className="formInputs" id="formName" placeholder="Name" required />
-                
                 <label className="sortFilterText">Date visited:</label>
                 <input onChange={(e) => setDate(e.target.value)} 
                 type="date" name="date" value={date} className="formInputs" id="formDate" required />
+
+                <input onChange={(e) => setName(e.target.value)} 
+                type="text" name="name" value={name} className="formInputs" id="formName" placeholder="Name" required />
 
                 <br/>
 
@@ -83,7 +82,7 @@ function NewHomeForm ({homes, setHomes}) {
                 type="number" name="completed" value={completed}
                 minLength="4" maxLength="4" min="1867" max="1959" placeholder="Year Completed" required />
 
-<br/>
+                <br/>
 
                 <select value={usonian} onChange={(e) => setUsonian(e.target.value)} className="usonianDropdown" id="formUsonianDropdown" placeholder="Usonian" name="usonian" required >
                     <option className="usonianDropdown" value="" >Usonian?</option>
