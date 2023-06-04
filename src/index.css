@@ -112,9 +112,24 @@
   width: 150px;
 }
 
+#newHomeSubmit {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  background-color:  #e25d54;
+  font-weight: 800;
+  font-size: medium;
+  color: #053352;
+  border-radius: 6px 6px 6px 6px;
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
 
 
 /* sort and filter ↓ */
+
+
 
 #sortFilter{
   margin-top: 10px;
@@ -126,8 +141,9 @@
   /* background: #5e686c; */
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
   background-color: #053352;
-  font-weight: 800;
   color: #bb8c4f;
+  font-weight: 800;
+
   border-radius: 8px 8px 8px 8px;
   width: 175px;
 }
@@ -137,6 +153,7 @@
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
   font-weight: bolder;
   text-align: center;
+  padding: 5px;
 }
 
 
@@ -209,9 +226,7 @@
   
 }
 
-.rearDetails{
-  cursor: pointer;
-}
+
 
 #row {
   display: flex;
@@ -227,7 +242,7 @@
   flex: 1;
 }
 
-
+/* card buttons ↓ */
 
 .cardButtons{
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
@@ -245,34 +260,17 @@
   color:#053352;
 }
 
-/* #newHomeForm {
-  background-color: #e25d54;
-} */
-
-
-
-
-#newHomeSubmit {
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-  background-color:  #e25d54;
-  font-weight: 800;
-  font-size: medium;
-  color: #053352;
-  border-radius: 6px 6px 6px 6px;
-  width: 200px;
-  height: 50px;
-  cursor: pointer;
-  margin-top: 10px;
+#viewDetailsButton{
+  background-color: #3b0501;
 }
 
 
 
 
-/* delivs: ** 
--get red logo to take up top nav/header, surround with gold line(s)
--float travel guide text on top of red logo - z index with positioning?
+
+/* 
+delivs
 - figure out top padding on front of home card, why won't it go?
 -back of card should be same size as front, text wrapped, etc. 
 -get these into a fucking grid
--scroll and zoom in/out should display properly
--bottom images cut off */
+-scroll and zoom in/out should display properly */
