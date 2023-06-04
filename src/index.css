@@ -7,9 +7,7 @@
 }
 
 .headerSegment {
-
   height: 200px;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +60,7 @@
 
 ::placeholder {
   color: #053352;
-  font-weight: 550;
+  font-weight:bolder;
 }
 
 #formName {
@@ -79,6 +77,8 @@
   width: 300px;
   height: 100px;
 }
+
+#text
 
 #formCity {
   width: 150px;
@@ -126,10 +126,18 @@
   margin-top: 10px;
 }
 
+#editDescription{
+  height: 75px;
+  width: 200px;
+}
+
+
+
+
+
 
 
 /* sort and filter ↓ */
-
 
 
 #sortFilter{
@@ -159,7 +167,15 @@
 
 
 
+
+
+
+
+
+
 /* cards ↓ */
+
+      /* cards - front ↓ */
 
 #flexRow {
   display: flex;
@@ -183,61 +199,76 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  /* flex-basis: 100%;
-  flex: 1; */
 
-  /* float: left; */
-  /* margin: 2%; */
-  /* padding: .25%; */
   outline-width: 7px;
   outline-color: #bb8c4f;
   outline-style: double;
   align-content: center;
 
-  margin: 15px;
+  margin: 20px;
+
+  width: 500px;
+  height: 550px;
 
 }
 
 
+.homeCardFront {
+  background-color: #053352 ;
+  /* padding: 10px; */
+  height:550px;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+#frontName {
+  color: #bb8c4f;
+  font-family: 'Architects Daughter', cursive;
+
+  padding-top: 15%;
+}
+
+.homeImage {
+  height: 250px;
+  width: 500px;
+  background-size: cover;
+  
+  
+  
+  
+}
+
+
+
+
+      /* cards - rear ↓ */
 
 .homeCardRear {
-  background-color:#e25d54;
+  background-color:#053352;
   /* padding-top: 3%;
   padding-bottom: 3%;
   padding-left: 1%;
   padding-right: 3%; */
   font-family: 'Architects Daughter', cursive;
   text-align: center;
+
+
+  font-size:medium;
+  /* color: #bb8c4f;  original color */
+  color: #ce9b58;
+
+  height:550px;
   width: 500px;
-  height: 250px;
-  font-size:small;
+  overflow: auto;
+  scrollbar-color: #bb8c4f;
 
-
-}
-
-.homeCardFront {
-  background-color: #053352 ;
-  /* padding: 10px; */
   
 }
 
-#frontName {
-  color: #bb8c4f;
-  font-family: 'Architects Daughter', cursive;
+#homeDetails{
+  padding: 5px;
 }
-
-.homeImage {
-  width: 500px;
-  height: 250px;
-  background-size: cover;
-  align-self: center;
-  padding-right: 5px;
-  padding-left: 5px;
-  
-}
-
-
-
 
 
 
@@ -250,9 +281,9 @@
 
 .cardButtons{
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-  background-color: #053352;
+  background-color:#3b0501;
   font-weight: 800;
-  color: #bb8c4f;
+  color:#ce9b58;
   border-radius: 8px 8px 8px 8px;
   width: 175px;
   cursor: pointer;
@@ -272,9 +303,27 @@
 
 
 
-/* 
-delivs
-- figure out top padding on front of home card, why won't it go?
--back of card should be same size as front, text wrapped, etc. 
--get these into a fucking grid
--scroll and zoom in/out should display properly */
+/* scrollbar ↓ */
+
+::-webkit-scrollbar {
+  width: 15px;
+  /* background: #ce9b58; */
+  color: aqua;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-button{
+  background:#33bd3c;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#3b0501;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #880d04; 
+}
