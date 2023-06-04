@@ -308,22 +308,26 @@
 ::-webkit-scrollbar {
   width: 15px;
   /* background: #ce9b58; */
-  color: aqua;
+
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+  background: #454545; 
 }
 
 ::-webkit-scrollbar-button{
-  background:#33bd3c;
+  background:#1e1e1e;
 }
 
 ::-webkit-scrollbar-thumb{
-  background:#3b0501;
+  background:#696a69;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #880d04; 
+  background: #6b6d6b; 
+}
+
+::-webkit-scrollbar-corner{
+  background-color: #e25d54;
 }

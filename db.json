@@ -95,30 +95,6 @@
       "usonian": true,
       "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Seamour_and_Gerte_Shavin_House.jpg",
       "rating": 0
-    },
-    {
-      "name": "adfad",
-      "date": "2023-06-15",
-      "description": "aafasdadf",
-      "city": "Liberty",
-      "state": "MO",
-      "completed": 1867,
-      "usonian": false,
-      "rating": 1,
-      "image": "adfa",
-      "id": 9
-    },
-    {
-      "name": "Ryan O'Sullivana",
-      "date": "2023-06-08",
-      "description": "ajksdfasdfhasdlfjasdf;kasdf;aksdnfa;sdjfnaajksdfasdfhasdlfjasdf;kasdf;aksdnfa;sdjfnaajksdfasdfhasdlfjasdf;kasdf;aksdnfa;sdjfnaajksdfasdfhasdlfjasdf;kasdf;aksdnfa;sdjfnaajksdfasdfhasdlfjasdf;kasdf;aksdnfa;sdjfnaajksdfasdfhasdlfjasdf;kasdf;aksdnfa;sdjfnaajksdfasdfhasdlfjasdf;kasdf;aksdnfa;sdjfnaajksdfasdfhasdlfjasdf;kasdf;aksdnfa;sdjfnaajksdfasdfhasdlfjasdf;kasdf;aksdnfa;sdjfnaajksdfasdfhasdlfjasdf;kasdf;aksdnfa;sdjfnaajksdfasdfhasdlfjasdf;kasdf;aksdnfa;sdjfnaajksdfasdfhasdlfjasdf;kasdf;aksdnfa;sd",
-      "city": "Libertya",
-      "state": "MOa",
-      "completed": 1867,
-      "usonian": false,
-      "rating": 1,
-      "image": "aaa",
-      "id": 10
     }
   ]
 }
