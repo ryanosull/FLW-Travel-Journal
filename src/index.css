@@ -196,14 +196,14 @@
   margin: 20px;
 
   width: 500px;
-  height: 550px;
+  height: 600px;
 
 }
 
 .homeCardFront {
   background-color: #053352 ;
   /* padding: 10px; */
-  height:550px;
+  height: 600px;
   width: 500px;
   justify-content: center;
   align-items: center;
@@ -217,7 +217,7 @@
 }
 
 .homeImage {
-  height: 250px;
+  height: 350px;
   width: 500px;
   background-size: cover;  
 }
@@ -229,21 +229,16 @@
 
 .homeCardRear {
   background-color:#053352;
-  /* padding-top: 3%;
-  padding-bottom: 3%;
-  padding-left: 1%;
-  padding-right: 3%; */
   font-family: 'Architects Daughter', cursive;
   text-align: center;
 
-  font-size:medium;
   /* color: #bb8c4f;  original color */
   color: #ce9b58;
+  font-size:medium;
 
-  height:550px;
+  height: 600px;
   width: 500px;
   overflow: auto;
-  scrollbar-color: #bb8c4f;
 }
 
 #homeDetails{
@@ -263,7 +258,7 @@
   border-radius: 8px 8px 8px 8px;
   width: 175px;
   cursor: pointer;
-  margin: 20px;
+  margin: 10px;
 }
 
 #deleteButton:hover{
