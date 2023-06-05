@@ -283,8 +283,6 @@
 
 ::-webkit-scrollbar {
   width: 15px;
-  /* background: #ce9b58; */
-
 }
 
 ::-webkit-scrollbar-track {
@@ -299,7 +297,6 @@
   background:#696a69;
 }
 
-/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #9a9a9a; 
 }
