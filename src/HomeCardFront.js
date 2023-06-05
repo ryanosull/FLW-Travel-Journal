@@ -1,6 +1,8 @@
 import React from "react";
 // import guggenheim from "../src/assets/guggenheim.png"; why won't this work as alt?
 
+// from 1.25 in this video: https://www.youtube.com/watch?v=p7J7u_9_3FI
+// <img style={{objectFit: "cover", width: "100px", height: "100px"}} src alt etc... /> 
 
 function HomeCardFront ({home, toggleHomeDetails}) {
 
