@@ -1,6 +1,6 @@
 import React from "react";
 
-function Sort ({changeSort}) {
+function Sort ({changeSort}) { //passing down function
 
     return (
         <div className="sortFilterText">Sort by:&nbsp;&nbsp;&nbsp;
@@ -14,7 +14,7 @@ function Sort ({changeSort}) {
                 <option value="Lowest">Lowest rating</option>
             </select>
         </div>
-    )
+    );
 };
 
 export default Sort;

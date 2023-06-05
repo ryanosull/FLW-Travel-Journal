@@ -2,11 +2,7 @@ import React from "react";
 import flwPattern from "../src/assets/flw_pattern.jpg";
 
 
-
-
-
-
-const Header = () => {
+function Header() { 
 	return (
         <div >
             <div className="headerSegment" >
@@ -18,5 +14,3 @@ const Header = () => {
 };
 
 export default Header;
-
-// color=#e3b270

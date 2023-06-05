@@ -1,6 +1,6 @@
 import React from "react";
 
-function Filter ({changeFilter}) {
+function Filter ({changeFilter}) { //passing down function
 
 
     return (
@@ -11,8 +11,7 @@ function Filter ({changeFilter}) {
                 <option value="non-Usonian">non-Usonian</option>
             </select>            
         </div>
-    )
+    );
 };
 
 export default Filter;
-// onChange={(e) => changeFilter (e.target.value)} 

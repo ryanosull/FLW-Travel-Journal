@@ -2,27 +2,21 @@ import React from "react";
 import HomesCard from "./HomesCard"
 
 
-
-
 function HomesContainer ({homes, setHomes, handleDelete}) {
 
-
-
-
+    //saving .map to variable
     const renderHomes = homes.map((home) => {
         return(
             <HomesCard home={home} homes={homes} setHomes={setHomes} key={home.id} handleDelete={handleDelete}/>
-        )
-    })
+        );
+    });
 
 
     return (
         <div className='homesContainer' id="flexRow" >
             {renderHomes}
         </div>
-    )
+    );
 };
 
 export default HomesContainer;
-
-

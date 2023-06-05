@@ -1,24 +1,28 @@
 import React, {useState} from "react";
 //
 
+
+
+//endpoint variables
 const baseUrl = "http://localhost:8000/"
 const homesUrl = baseUrl + "flwHomes/"
 
 function NewHomeForm ({homes, setHomes}) {
 
+    //inital state
     const [name, setName] = useState("")
     const [date, setDate] = useState("")
     const [description, setDescription] = useState("")
     const [city, setCity] = useState("")
-    const [state, setState] = useState("") // lol
-    const [completed, setCompleted] = useState("")//integer
-    const [usonian, setUsonian] = useState("")//boolean, what goes in ()? empty? null?
-    const [rating, setRating] = useState("")//integer
+    const [state, setState] = useState("") // 
+    const [completed, setCompleted] = useState("")
+    const [usonian, setUsonian] = useState("")
+    const [rating, setRating] = useState("")
     const [image, setImage] = useState("")
 
     function handleSubmitHome(e){
 
-        e.preventDefault()
+        e.preventDefault();
 
         let newHome = {
             name: name,
@@ -26,12 +30,13 @@ function NewHomeForm ({homes, setHomes}) {
             description: description,
             city: city, 
             state: state,
-            completed: parseInt(completed),
-            usonian: usonian === "true",
-            rating: parseInt(rating),
+            completed: parseInt(completed), //backend as integer
+            usonian: usonian === "true", //backend as boolean
+            rating: parseInt(rating), //backend as integer
             image: image,
-        }
+        };
 
+        //resetting state
         setName("")
         setDate("")
         setDescription("")
@@ -42,49 +47,52 @@ function NewHomeForm ({homes, setHomes}) {
         setRating("")
         setImage("")
 
-        let homePost = {
+        //post request stored as object
+        let homePost = { 
             method: "POST",
             headers: {
                 'Content-type': 'application/json'
             },
             body: JSON.stringify(newHome)
-        }
+        };
+
         fetch(homesUrl, homePost)
         .then(resp => resp.json())
-        .then(newHome => setHomes([...homes, newHome]))
-    }
+        .then(newHome => setHomes([...homes, newHome]));
+    };
 
     return (
         <div>
             <form onSubmit={handleSubmitHome} id="newHomeForm" >
 
                 <label className="sortFilterText">Date visited:</label>
-                <input onChange={(e) => setDate(e.target.value)} 
-                type="date" name="date" value={date} className="formInputs" id="formDate" required />
+                <input className="formInputs" id="formDate" onChange={(e) => setDate(e.target.value)} 
+                type="date" name="date" value={date}  required />
 
-                <input onChange={(e) => setName(e.target.value)} 
-                type="text" name="name" value={name} className="formInputs" id="formName" placeholder="Name" required />
-
-                <br/>
-
-                <textarea onChange={(e) => setDescription(e.target.value)}
-                type="text" name="description" value={description} className="formInputs" id="formDescription" maxLength="500" placeholder="Description" required />
+                <input className="formInputs" id="formName" onChange={(e) => setName(e.target.value)} 
+                type="text" name="name" value={name}  placeholder="Name" required />
 
                 <br/>
 
-                <input onChange={(e) => setCity(e.target.value)}
-                type="text" name="city" value={city} className="formInputs" id="formCity" placeholder="City" required />
+                <textarea className="formInputs" id="formDescription" onChange={(e) => setDescription(e.target.value)}
+                type="text" name="description" value={description}  maxLength="500" placeholder="Description" required />
 
-                <input onChange={(e) => setState(e.target.value)} className="formInputs" id="formState"
+                <br/>
+
+                <input className="formInputs" id="formCity" onChange={(e) => setCity(e.target.value)}
+                type="text" name="city" value={city} placeholder="City" required />
+
+                <input className="formInputs" id="formState" onChange={(e) => setState(e.target.value)} 
                 type="text" name="state" value={state} placeholder="State" required />
 
-                <input onChange={(e) => setCompleted(e.target.value)} className="formInputs" id="formCompleted"
+                <input className="formInputs" id="formCompleted" onChange={(e) => setCompleted(e.target.value)} 
                 type="number" name="completed" value={completed}
                 minLength="4" maxLength="4" min="1867" max="1959" placeholder="Year Completed" required />
 
                 <br/>
 
-                <select value={usonian} onChange={(e) => setUsonian(e.target.value)} className="usonianDropdown" id="formUsonianDropdown" placeholder="Usonian" name="usonian" required >
+                <select className="usonianDropdown" id="formUsonianDropdown"  onChange={(e) => setUsonian(e.target.value)}
+                placeholder="Usonian" name="usonian" value={usonian} required >
                     <option className="usonianDropdown" value="" >Usonian?</option>
                     <option className="usonianDropdown" name="true" value={true}>true</option>
                     <option className="usonianDropdown" name="false" value={false}>false</option>
@@ -102,7 +110,7 @@ function NewHomeForm ({homes, setHomes}) {
                 
             </form>
         </div>
-    )
+    );
 };
 
 export default NewHomeForm;
