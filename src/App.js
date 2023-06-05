@@ -80,7 +80,7 @@ function App() {
       <div id="guggDiv">
         <img id="gugg" src={guggenheim} alt="oh nooooo"/>
       </div>
-      
+
     </div>
   );
 }

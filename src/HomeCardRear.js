@@ -27,23 +27,10 @@ function HomeCardRear ({home, homes, setHomes, handleDelete, toggleHomeDetails})
     }
 
     function handleBackendDelete() {
-
-        const confirmed = window.confirm("Are you sure you want to delete?\nThis action cannot be undone.")
-
-        if (confirmed) {
-            fetch(`${homesUrl}${home.id}`, {
-                method: "DELETE"
-            })
-            .then(() => {
-                handleDelete(home.id)
-            })
-
-        } else {
-            if (!confirmed) {
-                console.log("cancel")
-            }
-        }
-
+        fetch(`${homesUrl}${home.id}`, {
+            method: "DELETE"
+        });
+        handleDelete(home.id);
     }
 
 

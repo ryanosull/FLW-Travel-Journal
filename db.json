@@ -95,66 +95,6 @@
       "usonian": true,
       "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Seamour_and_Gerte_Shavin_House.jpg",
       "rating": 0
-    },
-    {
-      "name": "adfaadf",
-      "date": "2023-06-14",
-      "description": "adsfa",
-      "city": "adsfasdf",
-      "state": "adsfasdf",
-      "completed": 1868,
-      "usonian": true,
-      "rating": 2,
-      "image": "adsfaf",
-      "id": 9
-    },
-    {
-      "name": "adsfa",
-      "date": "2023-06-07",
-      "description": "adfafsd",
-      "city": "aadsfasdfa",
-      "state": "adsfasdf",
-      "completed": 1868,
-      "usonian": false,
-      "rating": 2,
-      "image": "adsfafsd",
-      "id": 10
-    },
-    {
-      "name": "adsfadfa",
-      "date": "2023-06-14",
-      "description": "adsfa",
-      "city": "aasdfads",
-      "state": "aadsfa",
-      "completed": 1869,
-      "usonian": false,
-      "rating": 1,
-      "image": "adfa",
-      "id": 11
-    },
-    {
-      "name": "asdfafsd",
-      "date": "2023-06-04",
-      "description": "adsfadfs",
-      "city": "asdfa",
-      "state": "asdfa",
-      "completed": 1867,
-      "usonian": false,
-      "rating": 2,
-      "image": "adsfafd",
-      "id": 12
-    },
-    {
-      "name": "Ryan O'Sullivan",
-      "date": "2023-06-15",
-      "description": "afdafd",
-      "city": "Liberty",
-      "state": "MO",
-      "completed": 1867,
-      "usonian": true,
-      "rating": 3,
-      "image": "asdfa",
-      "id": 13
     }
   ]
 }
