@@ -15,7 +15,7 @@
     {
       "id": 2,
       "name": "Frank Lloyd Wright Home and Studio",
-      "date": "2003-06-02",
+      "date": "1900-06-02",
       "description": "The Frank Lloyd Wright Home and Studio is a historic house and design studio in Oak Park, Illinois, which was designed and owned by architect Frank Lloyd Wright. First built in 1889 and added to over the years, the home and studio is furnished with original Wright-designed furniture and textiles.",
       "city": "Oak Park",
       "state": "Illinois",
@@ -39,7 +39,7 @@
     {
       "id": 4,
       "name": "Fallingwater",
-      "date": "2022-05-03",
+      "date": "2015-07-03",
       "description": "Everybody's favorite",
       "city": "Mill Run",
       "state": "Pennsylvania",
@@ -51,38 +51,38 @@
     {
       "id": 5,
       "name": "Affleck House",
-      "date": "2022-05-21",
+      "date": "1975-05-21",
       "description": "some description",
       "city": "Bloomfield Hills",
       "state": "Michigan",
       "completed": 1940,
       "usonian": true,
       "image": "https://franklloydwright.org/wp-content/uploads/2017/02/Affleck_House_dusk_9-3-14_0066-fused-dc2_br-1382x640.jpg",
-      "rating": 0
+      "rating": "1"
     },
     {
       "id": 6,
       "name": "Rosenbaum House",
-      "date": "2022-06-19",
+      "date": "1980-06-19",
       "description": "A noted example of his Usonian house concept, it is the only Wright building in Alabama, and is one of only 26 pre-World War II Usonian houses. Wright scholar John Sergeant called it \"the purest example of the Usonian.\" ",
       "city": "Florence",
       "state": "Alabama",
       "completed": 1940,
       "usonian": true,
       "image": "https://cdn.elebase.io/f73a5e12-7a94-4da0-96b6-40fd97435fd2/0d93ebe9-9504-472c-a420-96f8cb15e144-tend06a574fe5dfda9e5.jpg?w=680&h=382&fit=crop&rot=auto&dpr=2&q=75",
-      "rating": 0
+      "rating": "6"
     },
     {
       "id": 7,
       "name": "Alice Millard House",
-      "date": "202-07-02",
+      "date": "2023-06-21",
       "description": "Also known as La Miniatura, this house is one of four of Wright's \"textile block\" houses - all built in Los Angeles County. The initial critical response to Millard House and the textile block structures was not positive. Over the years, critical views of Millard House became positive, and it is now considered one of Wright's finest works.",
       "city": "Pasadena",
       "state": "California",
       "completed": 1923,
       "usonian": false,
       "image": "https://i.pinimg.com/originals/d9/4a/19/d94a1957742911e2b3a48b73541026cd.jpg",
-      "rating": 0
+      "rating": "5"
     },
     {
       "id": 8,
@@ -94,7 +94,7 @@
       "completed": 1952,
       "usonian": true,
       "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Seamour_and_Gerte_Shavin_House.jpg",
-      "rating": 0
+      "rating": "3"
     }
   ]
 }
