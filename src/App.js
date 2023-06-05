@@ -6,7 +6,6 @@ import Sort from "./Sort";
 import Filter from "./Filter"
 import NewHomeForm from "./NewHomeForm";
 import guggenheim from "../src/assets/guggenheim.png"
-//
 
 
 

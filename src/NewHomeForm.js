@@ -1,5 +1,4 @@
 import React, {useState} from "react";
-//
 
 
 
@@ -24,7 +23,7 @@ function NewHomeForm ({homes, setHomes}) {
 
         e.preventDefault();
 
-        let newHome = {
+        let newHome = { //newHome object
             name: name,
             date: date,
             description: description,
@@ -58,7 +57,7 @@ function NewHomeForm ({homes, setHomes}) {
 
         fetch(homesUrl, homePost)
         .then(resp => resp.json())
-        .then(newHome => setHomes([...homes, newHome]));
+        .then(newHome => setHomes([...homes, newHome])); //spread new home into array of homes
     };
 
     return (
