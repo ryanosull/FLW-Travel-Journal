@@ -1,29 +1,49 @@
 # Frank Loyd Wright Travel Journal
 
-A simple app for users to record details about their visits to homes designed by the father of American architecture, Frank Lloyd Wright.
+The Frank Lloyd Wright Travel Journal is a simple app that allows users to record details about their visits to homes designed by the father of American architecture, Frank Lloyd Wright. Whether you're a dedicated architecture enthusiast or simply a fan of Wright's iconic designs, this app provides a convenient way to document and organize your experiences.
 
-I love architecture and I love Frank Lloyd Wright. As a kid, I spent a few summers doing workshops in FLW's very own home and studio in Oak Park, Il. Like some other FLW fans, I always liked to keep a journal of what homes I have visited. As such, this seemed like a good idea for a basic app to play with some JS and React fundamentals.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Features
+
+• **View Visited Homes:** Users can browse a list of homes they have visited, along with essential details such as the name, date of visit, location, description, and an image of the home.
+
+• **Add New Homes:** Easily add new entries to your travel journal by providing information about the visited home, including its name, date, location, description, and an image.
+
+• **Edit Entries:** Update the details of your previous entries, such as correcting information or adding additional notes.
+
+• **Delete Entries:** Remove entries from your travel journal if needed.
+
+• **Full CRUD Capability:** The app supports Create, Read, Update, and Delete operations, allowing you to manage your travel journal effectively.
+
+
+# Technologies Used
+• **React:** The app is built using the React framework, providing a fast and efficient user interface.
+
+• **Create React App:** The project was bootstrapped using [Create React App](https://github.com/facebook/create-react-app), allowing for a streamlined development setup.
+
+• **JSON Server:** A mock backend is provided using JSON Server, which serves the data stored in a db.json file.
 # Usage
 
-Users can view homes they have visited, add new homes, edit their entries, and delete their entries. There is full CRUD capability. The (mock) backend is a db.json file. JSON data purposely includes strings, numbers, a boolean, and string with a date in order to work with each data type. Forms are controlled, with the "update" form being dynamic. Frontend logic used for sort and filter functionality. No CSS frameworks here, just the basics.
+To use the Frank Lloyd Wright Travel Journal app locally, follow these steps:
+
+1. Clone the repository to your local machine.
+
+2. Open a terminal and navigate to the project directory.
+
+3. Install the required dependencies by running `npm install`.
+
+4. Start the backend server by running `json-server db.json --watch --port 8000` in a separate terminal window.
+
+5. Start the development server by running `npm start` in the terminal.
+
+6. Open your browser and visit http://localhost:3000 to access the app.
 
 
-# Environment Setup
+# JSON Data
 
-First, clone a copy locally.
+If you need to repopulate the db.json file after deleting cards, you can use the following JSON data:
 
-Then, in a new terminal, run: `json-server db.json --watch --port 8000` to start the backend server.
-
-Finally, in a seperate terminal, run: `npm install`, then `npm start` to start the development browser.
-
-
-### JSON Data
-
-After deleting cards, use the below JSON to repopulate the db.json file, or use the command:  `git restore db.json`, as necessary.
-
-### `db.json starter data:`
+#### `db.json starter data:`
 
 ```yaml
 {
@@ -128,9 +148,13 @@ After deleting cards, use the below JSON to repopulate the db.json file, or use 
 }
 ```
 
-## License
+# Screenshot
+
+![a screenshot](./src/assets/FLWscreenshot.png)
+
+# License
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
 
-### Enjoy!
+## Enjoy!
