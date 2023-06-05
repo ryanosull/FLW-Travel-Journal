@@ -35,7 +35,7 @@ function App() {
     setSort(newSort)
   }
 
-  function filterHomes () {
+  function filteredHomes () {
     if (filter === 'Usonian')
       return homes.filter(home => home.usonian)
     else if (filter === "non-Usonian")  
@@ -46,7 +46,7 @@ function App() {
 
   function sortHomes () {
 
-    let sortedHomes = filterHomes()
+    let sortedHomes = filteredHomes()
 
     if (sort === "Oldest") {
       return sortedHomes.sort((year1, year2) => year1.completed - year2.completed)
@@ -68,13 +68,12 @@ function App() {
     <div className="App">
 
       <Header />
-      <br/>
+      
       <NewHomeForm homes={homes} setHomes={setHomes} />
-      <br/>
-      <Sort changeSort={changeSort} />
-      <br/>
-      <Filter changeFilter = {changeFilter} />
-      <br />
+      <div id="sortFilter">
+        <Sort changeSort={changeSort} />
+        <Filter changeFilter = {changeFilter} />
+      </div>
       <HomesContainer homes={sortHomes()} setHomes={setHomes} handleDelete={handleDelete}/>
 
       <div id="guggDiv">

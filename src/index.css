@@ -7,22 +7,17 @@
 }
 
 .headerSegment {
-
-  height: 250px;
-
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 15%;
+  margin-bottom: 20px;
 
   /* padding-bottom: 200px; */
 }
+/* background-color: #bb8c4f; */
 
-
-
-  /* background-color: #bb8c4f; */
-
-  /* background-image: url("https://franklloydwright.org/wp-content/uploads/2020/02/MC_Blog_QT1_IconBlogHeader-01-1440x640.jpg"); */
+/* background-image: url("https://franklloydwright.org/wp-content/uploads/2020/02/MC_Blog_QT1_IconBlogHeader-01-1440x640.jpg"); */
 
 #flwPattern{
   position: absolute;
@@ -30,185 +25,76 @@
   
 }
 
-
 .headerText {
   color: #053352;
   font-size: 40px;
+  font-weight:800;
   font-family: 'Architects Daughter', cursive;
-  margin-top: 70px;
+  margin-top: 50px;
   z-index: 1;
 }
 
-
-.drop-down {
-  /* background-color:  #63584c; */
-  /* background: #5e686c; */
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-  background-color: #053352;
-  font-weight: 800;
-  color: #bb8c4f;
-  border-radius: 8px 8px 8px 8px;
-  width: 175px;
+/* #flwText{
+  justify-content: center;
 }
 
-.sortFilterText {
-  color: white;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-  font-weight: bolder;
-  text-align: center;
-}
-
-.homesCard {
-  /* padding: 1%; */
-  padding-bottom: 5%;
-
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%; */
-  
-}
-
-.homesCard {
-
-  /* display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1; */
-
-  /* float: left; */
-  /* margin: 2%; */
-  /* padding: .25%; */
-  outline-width: 7px;
-  outline-color: #bb8c4f;
-  outline-style: double;
-  align-content: center;
-
-}
-
-
-
-.homeCardRear {
-  background-color:#e25d54;
-  /* padding-top: 3%;
-  padding-bottom: 3%;
-  padding-left: 1%;
-  padding-right: 3%; */
-  font-family: 'Architects Daughter', cursive;
-  text-align: center;
-  width: 500px;
-  height: 250px;
-  font-size:small;
-
-
-}
-
-.homeCardFront {
-  background-color: #053352 ;
-  /* padding: 10px; */
-  padding: 5px;
-}
-
-#frontName {
-  color: #bb8c4f;
-  font-family: 'Architects Daughter', cursive;
-}
-
-.homeImage {
-  width: 500px;
-  height: 250px;
-  background-size: cover;
-  align-self: center;
-  padding-right: 5px;
-  padding-left: 5px;
-  
-}
-
-.rearDetails{
-  cursor: pointer;
-}
-
-#row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-#column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-}
-
-
-
-.cardButtons{
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-  background-color: #053352;
-  font-weight: 800;
-  color: #bb8c4f;
-  border-radius: 8px 8px 8px 8px;
-  width: 175px;
-  cursor: pointer;
-  margin: 20px;
-}
-
-/* #newHomeForm {
-  background-color: #e25d54;
+#tjText{
+  justify-content: center;
+  margin-top: 100px;
 } */
 
+
+
+
+/* new home form ↓ */
+
+#newHomeForm{
+  margin-top: 250px;
+  margin-bottom: 20px;
+}
 .formInputs {
   background-color: #bb8c4f;
   border-radius: 6px 6px 6px 6px;
+  margin: 7px;
 }
 
 ::placeholder {
   color: #053352;
-  font-weight: 550;
+  font-weight:bolder;
 }
 
 #formName {
-  margin-right: 10px;
+  
+  width: 150px;
+  
 }
 
-#formDate {
-  margin-left: 10px;
-}
+/* #formDate {
+  
+} */
 
 #formDescription {
   width: 300px;
   height: 100px;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  
 }
 
+#text
+
 #formCity {
-  margin-bottom: 5px;
+  width: 150px;
 }
 
 #formState {
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 5px;
+  width: 150px;
 }
 
 #formCompleted {
-  width: 125px;
-  margin-bottom: 5px;
+  width: 150px;
 }
 
-#formUsonianDropdown {
-  margin-bottom: 5px;
-}
-
-#formRating {
-  margin-left: 5px;
-  margin-right: 5px;
-  width: 70px;
-}
+/* #formUsonianDropdown {
+  
+} */
 
 .usonianDropdown {
   background-color: #bb8c4f;
@@ -219,27 +105,229 @@
   text-align: center;
 }
 
+#formRating {
+  width: 75px;
+}
+
+#formImage{
+  width: 150px;
+}
+
 #newHomeSubmit {
   font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
-  background-color:  #e25d54;
+  background-color:  #3b0501;
   font-weight: 800;
   font-size: medium;
-  color: #053352;
-  border-radius: 6px 6px 6px 6px;
+  color: #bb8c4f;
+  border-radius: 120px 16px 120px 16px;
   width: 200px;
   height: 50px;
   cursor: pointer;
   margin-top: 10px;
 }
 
+#editDescription{
+  height: 75px;
+  width: 200px;
+}
 
 
 
-/* delivs: ** 
--get red logo to take up top nav/header, surround with gold line(s)
--float travel guide text on top of red logo - z index with positioning?
-- figure out top padding on front of home card, why won't it go?
--back of card should be same size as front, text wrapped, etc. 
--get these into a fucking grid
--scroll and zoom in/out should display properly
--bottom images cut off */
+
+
+
+
+/* sort and filter ↓ */
+
+
+#sortFilter{
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.drop-down {
+  /* background-color:  #63584c; */
+  /* background: #5e686c; */
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  background-color: #053352;
+  color: #bb8c4f;
+  font-weight: 800;
+
+  border-radius: 8px 8px 8px 8px;
+  width: 175px;
+}
+
+.sortFilterText {
+  color: white;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  font-weight: bolder;
+  text-align: center;
+  padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+/* cards ↓ */
+
+      /* cards - front ↓ */
+
+#flexRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+#flexColumn {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+
+.homesCard {
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  outline-width: 7px;
+  outline-color: #bb8c4f;
+  outline-style: double;
+  align-content: center;
+
+  margin: 20px;
+
+  width: 500px;
+  height: 550px;
+
+}
+
+
+.homeCardFront {
+  background-color: #053352 ;
+  /* padding: 10px; */
+  height:550px;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+#frontName {
+  color: #bb8c4f;
+  font-family: 'Architects Daughter', cursive;
+
+  padding-top: 15%;
+}
+
+.homeImage {
+  height: 250px;
+  width: 500px;
+  background-size: cover;
+  
+  
+  
+  
+}
+
+
+
+
+      /* cards - rear ↓ */
+
+.homeCardRear {
+  background-color:#053352;
+  /* padding-top: 3%;
+  padding-bottom: 3%;
+  padding-left: 1%;
+  padding-right: 3%; */
+  font-family: 'Architects Daughter', cursive;
+  text-align: center;
+
+
+  font-size:medium;
+  /* color: #bb8c4f;  original color */
+  color: #ce9b58;
+
+  height:550px;
+  width: 500px;
+  overflow: auto;
+  scrollbar-color: #bb8c4f;
+
+  
+}
+
+#homeDetails{
+  padding: 5px;
+}
+
+
+
+
+
+
+
+
+/* card buttons ↓ */
+
+.cardButtons{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+  background-color:#3b0501;
+  font-weight: 800;
+  color:#ce9b58;
+  border-radius: 8px 8px 8px 8px;
+  width: 175px;
+  cursor: pointer;
+  margin: 20px;
+}
+
+#deleteButton:hover{
+  background-color:#e25d54;
+  color:#053352;
+}
+
+#viewDetailsButton{
+  background-color: #3b0501;
+}
+
+
+
+
+
+/* scrollbar ↓ */
+
+::-webkit-scrollbar {
+  width: 15px;
+  /* background: #ce9b58; */
+
+}
+
+::-webkit-scrollbar-track {
+  background: #454545; 
+}
+
+::-webkit-scrollbar-button{
+  background:#1e1e1e;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#696a69;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6b6d6b; 
+}
+
+::-webkit-scrollbar-corner{
+  background-color: #e25d54;
+}

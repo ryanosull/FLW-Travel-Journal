@@ -8,7 +8,7 @@
       "city": "Chicago",
       "state": "Illinois",
       "completed": 1910,
-      "usonian": false,
+      "usonian": "false",
       "image": "https://live.staticflickr.com/65535/49539496622_c997329f78_b.jpg",
       "rating": 5
     },

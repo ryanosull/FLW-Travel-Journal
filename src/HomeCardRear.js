@@ -79,7 +79,7 @@ function HomeCardRear ({home, homes, setHomes, handleDelete, toggleHomeDetails})
 
                         <h4>Date visited: <input onChange={handleInputChange} className="formInputs" type="date" name="date" value={formData.date} /></h4>
 
-                        <h4>Description: <textarea onChange={handleInputChange} className="formInputs" type="text" name="description" value={formData.description} maxLength="500" /></h4>
+                        <h4>Description: <textarea onChange={handleInputChange} className="formInputs" id="editDescription" type="text" name="description" value={formData.description} maxLength="500" /></h4>
 
                         <h4>City: <input onChange={handleInputChange} className="formInputs" type="text" name="city" value={formData.city} /></h4>
 
@@ -110,10 +110,10 @@ function HomeCardRear ({home, homes, setHomes, handleDelete, toggleHomeDetails})
             ) : (
 
                 <div className="homeCardRear">
-                    <div   >
+                    <div id="homeDetails">
                         <h2>{home.name}</h2>
                         <h3>Date visited: {home.date}</h3>
-                        <h4>{home.description}</h4>
+                        <h4 id="detailDesc" >{home.description}</h4>
                         <h4>City: {home.city}</h4>
                         <h4>State: {home.state}</h4>
                         <h4>Year Completed: {home.completed}</h4>
@@ -123,7 +123,7 @@ function HomeCardRear ({home, homes, setHomes, handleDelete, toggleHomeDetails})
                     </div>
 
                     <button className="cardButtons" onClick={toggleEditForm} >Edit</button>
-                    <button className="cardButtons" onClick={handleBackendDelete}>Delete</button>
+                    <button className="cardButtons" id="deleteButton" onClick={handleBackendDelete}>Delete</button>
                     <button className="cardButtons" onClick={toggleHomeDetails} >View image</button>
                 </div>
                 )
