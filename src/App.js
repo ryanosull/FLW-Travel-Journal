@@ -6,7 +6,6 @@ import Sort from "./Sort";
 import Filter from "./Filter"
 import NewHomeForm from "./NewHomeForm";
 import guggenheim from "../src/assets/guggenheim.png"
-//
 
 
 
@@ -72,7 +71,7 @@ function App() {
 
     //convert the date strings to Date objects using the Date constructor. then, compare the Date objects using the comparison operators.
 
-    else if (sort === "First") {
+    else if (sort === "First") { //first visited
 
       function compareFirstDates(date1, date2){
 
@@ -81,13 +80,14 @@ function App() {
 
         if (dateObj1 < dateObj2) {
           return -1 
-        }
-      }
+        };
+      };
+
       return sortedHomes.sort(compareFirstDates)
       
     }
 
-    else if (sort === "Last") {
+    else if (sort === "Last") { //last visited
 
       function compareLastDates(date1, date2){
 
@@ -96,18 +96,20 @@ function App() {
 
         if (dateObj2 < dateObj1) {
           return -1 
-        }
-      }
+        };
+      };
+
       return sortedHomes.sort(compareLastDates)
+
     }
-    
+
     else return sortedHomes //else do nothing
-  }
+  };
 
   function handleDelete(id) {
     const newHomes = homes.filter(home => home.id !== id )
     setHomes(newHomes)
-  }
+  };
 
 
 
@@ -132,7 +134,7 @@ function App() {
 
     </div>
   );
-}
+};
 
 export default App;
 

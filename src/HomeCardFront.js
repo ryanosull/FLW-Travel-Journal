@@ -1,12 +1,8 @@
 import React from "react";
 
 
-// from 1.25 in this video: https://www.youtube.com/watch?v=p7J7u_9_3FI
-// <img style={{objectFit: "cover", width: "100px", height: "100px"}} src alt etc... /> 
 
 function HomeCardFront ({home, toggleHomeDetails}) {
-
-
 
     return (
         <div className="homeCardFront" >
@@ -15,7 +11,7 @@ function HomeCardFront ({home, toggleHomeDetails}) {
             <br/>
             <button onClick={toggleHomeDetails} className="cardButtons" id="viewDetailsButton" >View details</button>
         </div>
-    )
+    );
 };
 
 export default HomeCardFront; 
