@@ -5,15 +5,17 @@ The Frank Lloyd Wright Travel Journal is a simple app that allows users to recor
 
 # Features
 
-• **View Visited Homes:** Users can browse a list of homes they have visited, along with essential details such as the name, date of visit, location, description, and an image of the home.
-
-• **Add New Homes:** Easily add new entries to your travel journal by providing information about the visited home, including its name, date, location, description, and an image.
-
-• **Edit Entries:** Update the details of your previous entries, such as correcting information or adding additional notes.
-
-• **Delete Entries:** Remove entries from your travel journal if needed.
-
 • **Full CRUD Capability:** The app supports Create, Read, Update, and Delete operations, allowing you to manage your travel journal effectively.
+
+    • View Visited Homes: Users can browse a list of homes they have visited, along with essential details such as the name, date of visit, location, description, and an image of the home.
+
+    • Add New Homes: Easily add new entries to your travel journal by providing information about the visited home, including its name, date, location, description, and an image.
+
+    • Edit Entries: Update the details of your previous entries, such as correcting information or adding additional notes.
+
+    • Delete Entries: Remove entries from your travel journal if needed.
+
+• **F:**
 
 
 # Technologies Used
