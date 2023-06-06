@@ -15,10 +15,10 @@ The Frank Lloyd Wright Travel Journal is a simple app that allows users to recor
 
     • Delete Entries: Remove entries from your travel journal if needed.
 
-• **F:**
 
 
 # Technologies Used
+
 • **React:** The app is built using the React, providing a fast and efficient user interface.
 
 • **Create React App:** The project was bootstrapped using [Create React App](https://github.com/facebook/create-react-app), allowing for a streamlined development setup.
