@@ -17,7 +17,7 @@ The Frank Lloyd Wright Travel Journal is a simple app that allows users to recor
 
 
 # Technologies Used
-• **React:** The app is built using the React framework, providing a fast and efficient user interface.
+• **React:** The app is built using the React, providing a fast and efficient user interface.
 
 • **Create React App:** The project was bootstrapped using [Create React App](https://github.com/facebook/create-react-app), allowing for a streamlined development setup.
 
@@ -82,7 +82,7 @@ If you need to repopulate the db.json file after deleting cards, you can use the
       "completed": 1937,
       "usonian": false,
       "image": "https://www.phoenixmag.com/wp-content/uploads/2020/02/Taliesin-West_Front-evening-1_Photo-credit-Andrew-Pielage_copyright-Frank-Lloyd-Wright-Foundation.jpg",
-      "rating": 0
+      "rating": 3
     },
     {
       "id": 4,
@@ -94,7 +94,7 @@ If you need to repopulate the db.json file after deleting cards, you can use the
       "completed": 1939,
       "usonian": false,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Fallingwater%2C_also_known_as_the_Edgar_J._Kaufmann%2C_Sr.%2C_residence%2C_Pennsylvania%2C_by_Carol_M._Highsmith.jpg/1280px-Fallingwater%2C_also_known_as_the_Edgar_J._Kaufmann%2C_Sr.%2C_residence%2C_Pennsylvania%2C_by_Carol_M._Highsmith.jpg",
-      "rating": 0
+      "rating": 8
     },
     {
       "id": 5,
@@ -106,7 +106,7 @@ If you need to repopulate the db.json file after deleting cards, you can use the
       "completed": 1940,
       "usonian": true,
       "image": "https://franklloydwright.org/wp-content/uploads/2017/02/Affleck_House_dusk_9-3-14_0066-fused-dc2_br-1382x640.jpg",
-      "rating": 0
+      "rating": 6
     },
     {
       "id": 6,
@@ -118,7 +118,7 @@ If you need to repopulate the db.json file after deleting cards, you can use the
       "completed": 1940,
       "usonian": true,
       "image": "https://cdn.elebase.io/f73a5e12-7a94-4da0-96b6-40fd97435fd2/0d93ebe9-9504-472c-a420-96f8cb15e144-tend06a574fe5dfda9e5.jpg?w=680&h=382&fit=crop&rot=auto&dpr=2&q=75",
-      "rating": 0
+      "rating": 5
     },
     {
       "id": 7,
@@ -130,7 +130,7 @@ If you need to repopulate the db.json file after deleting cards, you can use the
       "completed": 1923,
       "usonian": false,
       "image": "https://i.pinimg.com/originals/d9/4a/19/d94a1957742911e2b3a48b73541026cd.jpg",
-      "rating": 0
+      "rating": 2
     },
     {
       "id": 8,
@@ -142,7 +142,7 @@ If you need to repopulate the db.json file after deleting cards, you can use the
       "completed": 1952,
       "usonian": true,
       "image": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Seamour_and_Gerte_Shavin_House.jpg",
-      "rating": 0
+      "rating": 10
     }
   ]
 }

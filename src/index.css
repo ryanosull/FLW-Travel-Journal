@@ -187,11 +187,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: center;
 
   outline-width: 7px;
   outline-color: #bb8c4f;
   outline-style: double;
-  align-content: center;
 
   margin: 20px;
 
@@ -230,7 +230,10 @@
 .homeCardRear {
   background-color:#053352;
   font-family: 'Architects Daughter', cursive;
+
   text-align: center;
+  justify-content: center;
+  align-items: center;
 
   /* color: #bb8c4f;  original color */
   color: #ce9b58;
@@ -258,7 +261,7 @@
   border-radius: 8px 8px 8px 8px;
   width: 175px;
   cursor: pointer;
-  margin: 10px;
+  margin: 8px;
 }
 
 #deleteButton:hover{
