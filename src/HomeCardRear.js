@@ -150,7 +150,7 @@ function HomeCardRear ({home, homes, setHomes, handleDelete, toggleHomeDetails})
 
                 </div>
                 )
-            };
+            }
         </div>    
     );
 };
