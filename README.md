@@ -2,6 +2,10 @@
 
 The Frank Lloyd Wright Travel Journal is a simple app that allows users to record details about their visits to homes designed by the father of American architecture, Frank Lloyd Wright. Whether you're a dedicated architecture enthusiast or simply a fan of Wright's iconic designs, this app provides a convenient way to document and organize your experiences.
 
+# Screenshot
+
+![a screenshot](./src/assets/FLWscreenshot.png)
+
 
 # Features
 
@@ -150,9 +154,7 @@ If you need to repopulate the db.json file after deleting cards, you can use the
 }
 ```
 
-# Screenshot
 
-![a screenshot](./src/assets/FLWscreenshot.png)
 
 # License
 
