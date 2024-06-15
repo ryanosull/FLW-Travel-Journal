@@ -7,6 +7,10 @@ import Filter from "./Filter"
 import NewHomeForm from "./NewHomeForm";
 import guggenheim from "../src/assets/guggenheim.png"
 
+//Environment setup ↓
+//In a new terminal: `` json-server db.json --watch --port 8000 ``
+//In a seperate terminal: `` npm install `` then `` npm start ``
+
 
 
 //endpoint variables
